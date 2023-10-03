@@ -67,6 +67,15 @@ a {
   justify-content: space-between;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #191D1E;
+  padding: 52px 64px;
+  height: 160px;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -87,7 +96,7 @@ a {
   height: max-content;
 }
 
-.info-block {
+.address {
   min-height: 650px;
   display: flex;
   flex-direction: column;
@@ -144,4 +153,12 @@ a {
 
 .info-text {
   margin-left: 40px;
+}
+
+.about-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 103px 64px 100px 64px;
+  background: #40453C;
 }

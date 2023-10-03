@@ -1,5 +1,6 @@
 import { CSSProperties, FC, ReactNode } from "react";
 import { Button } from "@mui/material"
+import { MouseEventHandler } from 'react'
 
 interface IButtonComponent {
 	children: string | ReactNode
@@ -10,9 +11,10 @@ interface IButtonComponent {
 	lineHeight?: string
 	letterSpacing?: string
 	styles?: CSSProperties
+	onClick?: MouseEventHandler<HTMLButtonElement>
 }
 
-const ButtonComponent: FC<IButtonComponent> = ({ children, className, width, height, fontSize, styles, lineHeight, letterSpacing }) => {
+const ButtonComponent: FC<IButtonComponent> = ({ children, className, width, height, fontSize, styles, lineHeight, letterSpacing, onClick }) => {
 	return (
 		<Button
 			sx={{
@@ -27,6 +29,7 @@ const ButtonComponent: FC<IButtonComponent> = ({ children, className, width, hei
 				letterSpacing: letterSpacing,
 				borderRadius: "0",
 			}}
+			onClick={onClick}
 			className={className}
 			style={styles}
 		>

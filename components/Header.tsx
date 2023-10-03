@@ -1,17 +1,12 @@
-import { FC, useState, useCallback } from "react"
+import { FC } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import ButtonComponent from "./ButtonComponent"
-import Select, { SelectChangeEvent } from "@mui/material/Select"
+import Select from "@mui/material/Select"
 import MenuItem from "@mui/material/MenuItem"
+import { ILanguage } from "../pages"
 
-const Header: FC = () => {
-
-	const [language, setLanguage] = useState("RU");
-
-	const handleLanguage = useCallback((event: SelectChangeEvent) => {
-		setLanguage(event.target.value as string)
-	}, [setLanguage]);
+const Header: FC<ILanguage> = ({ language, handleLanguage }) => {
 
 	return (
 		<header className="header">
@@ -21,8 +16,8 @@ const Header: FC = () => {
 			<nav className="navbar">
 				<Link href={"/about"} className="navlink">О нас</Link>
 				<Link href={"/menu"} className="navlink">Меню</Link>
-				<Link href={"/about"} className="navlink">Фото</Link>
-				<Link href={"/menu"} className="navlink">Контакты</Link>
+				<Link href={"/photos"} className="navlink">Фото</Link>
+				<Link href={"/contact"} className="navlink">Контакты</Link>
 				<ButtonComponent
 					className={"button-component"}
 					width={"258px"}
