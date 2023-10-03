@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Raleway Regular;
+  overflow-x: hidden;
 }
 
 a {
@@ -30,13 +32,18 @@ a {
 }
 
 @font-face {
+  font-family: "Raleway Medium";
+  src: url("../assets/fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
   font-family: "Raleway Bold";
   src: url("../assets/fonts/Raleway-Bold.ttf");
 }
 
 @font-face {
-  font-family: "Raleway Medium";
-  src: url("../assets/fonts/Raleway-Medium.ttf");
+  font-family: "Raleway ExtraBold";
+  src: url("../assets/fonts/Raleway-ExtraBold.ttf");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -76,7 +83,65 @@ a {
   fill: #fff !important;
 }
 
-.rent-button:hover {
+.main-block {
+  height: max-content;
+}
+
+.info-block {
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/Main-bg.jpg");
+}
+
+.under-block {
+  min-height: 650px;
+  background: #E5D8CB;
+}
+
+.button-component:hover {
   background: #fff;
   color: #191D1E;
+}
+
+.main-marquee {
+  padding-top: 11px;
+  font-family: Raleway SemiBold;
+  font-size: 35px;
+  line-height: 49px;
+  letter-spacing: 5px;
+  color: #000;
+}
+
+.marquee-tilda {
+  padding-bottom: 8px;
+  margin: 0 16px;
+  font-size: 75px;
+}
+
+.marquee-block {
+  display: flex;
+  height: max-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.information-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  padding-bottom: 110px;
+}
+
+.info-collage {
+  display: flex;
+}
+
+.info-text {
+  margin-left: 40px;
 }
