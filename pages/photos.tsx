@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 
-const Photos: NextPage = () => {
+const PhotoPage: NextPage = () => {
 	return (
 		<>
-			photos
+			seflk;fklerlkf
 		</>
 	);
 };
 
-export default Photos;
+export default PhotoPage;

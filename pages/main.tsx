@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import Image from 'next/image';
-import { Box, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import ButtonComponent from '../components/ButtonComponent';
 import Marquee from 'react-fast-marquee';
 import InfoBlock from '../components/blocks/InfoBlock';
@@ -10,21 +10,23 @@ import NewsBlock from '../components/blocks/NewsBlock';
 import BookingBlock from '../components/blocks/BookingBlock';
 import SubscribeBlock from '../components/blocks/SubscribeBlock';
 import ContactBlock from '../components/blocks/ContactBlock';
+import { Parallax } from 'react-parallax';
 
-const MarqueeComponent = () => {
+const MarqueeComponent: FC = () => {
+
 	return (
 		<div className="marquee-block" style={{ overflow: "hidden" }}>
 			<p className="marquee-tilda">~</p>
 			БИЗНЕС-ЛАНЧИ ДО 14:00
 		</div>
 	);
-}
+};
 
 const MainPage: FC = () => {
 
 	return (
 		<main className="main-block">
-			<div className="address">
+			<Parallax blur={1} bgImage="/Main-bg.jpg" bgImageAlt="bg" strength={300} className='address'>
 				<Image
 					style={{ marginBottom: "30px" }}
 					alt="logo"
@@ -33,13 +35,13 @@ const MainPage: FC = () => {
 					width={230}
 					height={40}
 				/>
-				<Typography sx={{ fontSize: "20px", fontWeight: "300", marginBottom: "10px" }}>Москва, ул. Прозоровского 21</Typography>
-				<Typography sx={{ fontSize: "20px", fontWeight: "300" }}>пн-пт 9:00 - 22:00</Typography>
-				<Typography sx={{ fontSize: "20px", fontWeight: "300", marginBottom: "30px" }}>сб-вс 10:00 - 23:00</Typography>
+				<Typography className="sm-text" sx={{ fontSize: "20px", fontWeight: "300", marginBottom: "10px" }}>Москва, ул. Прозоровского 21</Typography>
+				<Typography className="sm-text" sx={{ fontSize: "20px", fontWeight: "300" }}>пн-пт 9:00 - 22:00</Typography>
+				<Typography className="sm-text" sx={{ fontSize: "20px", fontWeight: "300", marginBottom: "30px" }}>сб-вс 10:00 - 23:00</Typography>
 				<ButtonComponent
 					width={"288px"}
 					height={"50px"}
-					className={"button-component"}
+					className={"button-component sm-button"}
 					fontSize={"20px"}
 					lineHeight={"28px"}
 					letterSpacing={"-1px"}
@@ -47,8 +49,7 @@ const MainPage: FC = () => {
 				>
 					Забронировать столик
 				</ButtonComponent>
-			</div>
-
+			</Parallax>
 			<div className="under-block">
 
 				<Marquee className={"main-marquee"}>
@@ -62,7 +63,6 @@ const MainPage: FC = () => {
 					<MarqueeComponent />
 				</Marquee>
 
-				{/* main blocks */}
 				<InfoBlock />
 
 				<AboutBlock />
@@ -79,7 +79,7 @@ const MainPage: FC = () => {
 
 			</div>
 		</main>
-	)
-}
+	);
+};
 
 export default MainPage;

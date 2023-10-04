@@ -70,22 +70,24 @@ const GalleryBlock: FC = () => {
 			</Typography>
 
 			<div style={{ display: "flex", alignItems: "center" }}>
-				<ButtonComponent
-					className="button-component"
-					styles={{
-						marginLeft: "64px",
-						width: "184px",
-						height: "50px",
-						fontSize: "20px",
-						fontWeight: "300",
-						textTransform: "none",
-						marginRight: "33px"
-					}}
-					lineHeight={"28px"}
-					letterSpacing={"1px"}
-				>
-					Больше фото
-				</ButtonComponent>
+				<Link href={"/photos"}>
+					<ButtonComponent
+						className="button-component"
+						styles={{
+							marginLeft: "64px",
+							width: "184px",
+							height: "50px",
+							fontSize: "20px",
+							fontWeight: "300",
+							textTransform: "none",
+							marginRight: "33px"
+						}}
+						lineHeight={"28px"}
+						letterSpacing={"1px"}
+					>
+						Больше фото
+					</ButtonComponent>
+				</Link>
 
 				<Link
 					href={"/"}
