@@ -3,7 +3,7 @@ import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import Link from "next/link";
 import { Box, MenuItem, Select } from "@mui/material";
-import { ILanguage } from "../pages";
+import { ILanguage } from "../pages/_app";
 import Arrow from "./Arrow";
 
 const Footer: FC<ILanguage> = ({ language, handleLanguage }) => {

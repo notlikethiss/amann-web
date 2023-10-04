@@ -4,7 +4,7 @@ import Link from "next/link"
 import ButtonComponent from "./ButtonComponent"
 import Select from "@mui/material/Select"
 import MenuItem from "@mui/material/MenuItem"
-import { ILanguage } from "../pages"
+import { ILanguage } from "../pages/_app";
 import Arrow from "./Arrow"
 
 const Header: FC<ILanguage> = ({ language, handleLanguage }) => {
