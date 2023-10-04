@@ -265,3 +265,10 @@ a {
   padding: 103px 64px 100px 64px;
   background: #40453C;
 }
+
+.contact-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(64, 69, 60, 1);
+}

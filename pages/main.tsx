@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import Image from 'next/image';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import ButtonComponent from '../components/ButtonComponent';
 import Marquee from 'react-fast-marquee';
 import InfoBlock from '../components/blocks/InfoBlock';
@@ -8,6 +8,8 @@ import AboutBlock from '../components/blocks/AboutBlock';
 import GalleryBlock from '../components/blocks/GalleryBlock';
 import NewsBlock from '../components/blocks/NewsBlock';
 import BookingBlock from '../components/blocks/BookingBlock';
+import SubscribeBlock from '../components/blocks/SubscribeBlock';
+import ContactBlock from '../components/blocks/ContactBlock';
 
 const MarqueeComponent = () => {
 	return (
@@ -48,6 +50,7 @@ const MainPage: FC = () => {
 			</div>
 
 			<div className="under-block">
+
 				<Marquee className={"main-marquee"}>
 					<MarqueeComponent />
 					<MarqueeComponent />
@@ -59,6 +62,7 @@ const MainPage: FC = () => {
 					<MarqueeComponent />
 				</Marquee>
 
+				{/* main blocks */}
 				<InfoBlock />
 
 				<AboutBlock />
@@ -68,6 +72,11 @@ const MainPage: FC = () => {
 				<NewsBlock />
 
 				<BookingBlock />
+
+				<SubscribeBlock />
+
+				<ContactBlock />
+
 			</div>
 		</main>
 	)
