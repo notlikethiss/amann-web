@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Link from "next/link";
 import { Box, MenuItem, Select } from "@mui/material";
 import { ILanguage } from "../pages";
+import Arrow from "./Arrow";
 
 const Footer: FC<ILanguage> = ({ language, handleLanguage }) => {
 	return (
@@ -45,9 +46,10 @@ const Footer: FC<ILanguage> = ({ language, handleLanguage }) => {
 					<Select
 						disableUnderline
 						variant="standard"
-						sx={{ color: "#fff", fontFamily: "Raleway Light" }}
+						sx={{ color: "#fff", fontFamily: "Raleway" }}
 						label={"RU"}
 						value={language}
+						IconComponent={Arrow}
 						onChange={handleLanguage}
 					>
 						<MenuItem value={"RU"}>Русский</MenuItem>

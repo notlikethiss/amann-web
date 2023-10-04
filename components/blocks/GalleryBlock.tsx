@@ -27,7 +27,7 @@ const MemoMarqueeComp = memo(MarqueeComponent);
 const GalleryBlock: FC = () => {
 
 	return (
-		<div className="gallery" style={{ background: "#191D1E", padding: "120px 0" }}>
+		<section className="gallery-block" style={{ background: "#191D1E", padding: "120px 0" }}>
 			<Typography
 				sx={{
 					fontWeight: "800",
@@ -100,7 +100,7 @@ const GalleryBlock: FC = () => {
 					Наш инстаграм
 				</Link>
 			</div>
-		</div >
+		</section>
 	);
 };
 

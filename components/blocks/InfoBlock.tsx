@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const InfoBlock: FC = () => {
 	return (
-		<div className="information-block">
+		<section className="information-block">
 			<div className="info-collage" style={{ marginLeft: "64px" }}>
 				<Image
 					alt='interier'
@@ -23,7 +23,14 @@ const InfoBlock: FC = () => {
 				/>
 			</div>
 			<div className="info-text">
-				<Typography fontWeight={800} fontSize={35} color={"#000"}>КОРОТКИЙ ЗАГОЛОВОК</Typography>
+				<Typography
+					fontWeight={800}
+					fontSize={35}
+					color={"#000"}
+					textTransform={"uppercase"}
+				>
+					Короткий заголовок
+				</Typography>
 				<Typography
 					width={445}
 					color={"#000"}
@@ -51,7 +58,7 @@ const InfoBlock: FC = () => {
 					Посмотреть меню
 				</Link>
 			</div>
-		</div>
+		</section>
 	);
 };
 

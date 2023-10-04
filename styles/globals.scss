@@ -2,7 +2,7 @@
 
 html,
 body {
-  padding: 0;
+  padding: 0 !important;
   margin: 0;
   overflow-x: hidden;
 }
@@ -17,33 +17,119 @@ a {
 }
 
 @font-face {
-  font-family: "Raleway Light";
-  src: url("../assets/fonts/Raleway-Light.ttf");
+  font-family: 'Raleway';
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.eot');
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.woff') format('woff'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.ttf') format('truetype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.svg') format('svg');
+  font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Raleway Regular";
-  src: url("../assets/fonts/Raleway-Regular.ttf");
+  font-family: 'Raleway';
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.eot');
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.woff') format('woff'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.ttf') format('truetype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.svg') format('svg');
+  font-weight: 200;
+  font-style: normal;
+
 }
 
 @font-face {
-  font-family: "Raleway Semibold";
-  src: url("../assets/fonts/Raleway-SemiBold.ttf");
+  font-family: 'Raleway';
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300-.eot');
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300-.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300.woff') format('woff'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300.ttf') format('truetype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300.svg') format('svg');
+  font-weight: 300;
+  font-style: normal;
+
 }
 
 @font-face {
-  font-family: "Raleway Medium";
-  src: url("../assets/fonts/Raleway-Medium.ttf");
+  font-family: 'Raleway';
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.eot');
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.woff') format('woff'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.ttf') format('truetype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 @font-face {
-  font-family: "Raleway Bold";
-  src: url("../assets/fonts/Raleway-Bold.ttf");
+  font-family: 'Raleway';
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.eot');
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.woff') format('woff'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.ttf') format('truetype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+
 }
 
 @font-face {
-  font-family: "Raleway ExtraBold";
-  src: url("../assets/fonts/Raleway-ExtraBold.ttf");
+  font-family: 'Raleway';
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.eot');
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.woff') format('woff'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.ttf') format('truetype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.svg') format('svg');
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.eot');
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.woff') format('woff'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.ttf') format('truetype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.eot');
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.woff') format('woff'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.ttf') format('truetype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.svg') format('svg');
+  font-weight: 800;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.eot');
+  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.woff') format('woff'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.ttf') format('truetype'),
+    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.svg') format('svg');
+  font-weight: 900;
+  font-style: normal;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -85,11 +171,15 @@ a {
   font-size: 20px;
   margin: 0 25px;
   font-weight: 300;
-  font-family: Raleway Light;
+  font-family: Raleway;
 }
 
 .MuiSelect-icon {
   fill: #fff !important;
+}
+
+.MuiSelect-select {
+  padding-right: 18px !important;
 }
 
 .main-block {
@@ -119,7 +209,8 @@ a {
 
 .main-marquee {
   padding-top: 11px;
-  font-family: Raleway SemiBold;
+  font-family: Raleway;
+  font-weight: 500;
   font-size: 35px;
   line-height: 49px;
   letter-spacing: 5px;
@@ -127,7 +218,7 @@ a {
 }
 
 .marquee-tilda {
-  padding-bottom: 8px;
+  padding-bottom: 14px;
   margin: 0 16px;
   font-size: 75px;
 }
@@ -137,6 +228,18 @@ a {
   height: max-content;
   align-items: center;
   justify-content: center;
+}
+
+.news-block {
+  background: #E5D8CB;
+  padding: 120px 64px;
+}
+
+.booking-block {
+  display: flex;
+  justify-content: space-between;
+  background: #56624B;
+  padding: 34px 64px;
 }
 
 .information-block {

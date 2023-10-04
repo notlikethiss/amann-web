@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const AboutBlock: FC = () => {
 	return (
-		<div className="about-block">
+		<section className="about-block">
 			<div>
 				<Typography sx={{ fontWeight: "800", fontSize: "35px", textTransform: "uppercase" }}>О нас</Typography>
 				<Typography
@@ -62,7 +62,7 @@ const AboutBlock: FC = () => {
 					height={392}
 				/>
 			</div>
-		</div >
+		</section>
 	);
 };
 

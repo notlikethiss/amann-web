@@ -6,6 +6,8 @@ import Marquee from 'react-fast-marquee';
 import InfoBlock from '../components/blocks/InfoBlock';
 import AboutBlock from '../components/blocks/AboutBlock';
 import GalleryBlock from '../components/blocks/GalleryBlock';
+import NewsBlock from '../components/blocks/NewsBlock';
+import BookingBlock from '../components/blocks/BookingBlock';
 
 const MarqueeComponent = () => {
 	return (
@@ -29,9 +31,9 @@ const MainPage: FC = () => {
 					width={230}
 					height={40}
 				/>
-				<Typography sx={{ fontSize: "20px", marginBottom: "10px" }}>Москва, ул. Прозоровского 21</Typography>
-				<Typography sx={{ fontSize: "20px" }}>пн-пт 9:00 - 22:00</Typography>
-				<Typography sx={{ fontSize: "20px", marginBottom: "30px" }}>сб-вс 10:00 - 23:00</Typography>
+				<Typography sx={{ fontSize: "20px", fontWeight: "300", marginBottom: "10px" }}>Москва, ул. Прозоровского 21</Typography>
+				<Typography sx={{ fontSize: "20px", fontWeight: "300" }}>пн-пт 9:00 - 22:00</Typography>
+				<Typography sx={{ fontSize: "20px", fontWeight: "300", marginBottom: "30px" }}>сб-вс 10:00 - 23:00</Typography>
 				<ButtonComponent
 					width={"288px"}
 					height={"50px"}
@@ -39,7 +41,7 @@ const MainPage: FC = () => {
 					fontSize={"20px"}
 					lineHeight={"28px"}
 					letterSpacing={"-1px"}
-					styles={{ textTransform: "none" }}
+					styles={{ textTransform: "none", fontWeight: "300" }}
 				>
 					Забронировать столик
 				</ButtonComponent>
@@ -62,6 +64,10 @@ const MainPage: FC = () => {
 				<AboutBlock />
 
 				<GalleryBlock />
+
+				<NewsBlock />
+
+				<BookingBlock />
 			</div>
 		</main>
 	)

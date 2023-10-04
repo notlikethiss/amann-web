@@ -5,6 +5,7 @@ import ButtonComponent from "./ButtonComponent"
 import Select from "@mui/material/Select"
 import MenuItem from "@mui/material/MenuItem"
 import { ILanguage } from "../pages"
+import Arrow from "./Arrow"
 
 const Header: FC<ILanguage> = ({ language, handleLanguage }) => {
 
@@ -30,9 +31,10 @@ const Header: FC<ILanguage> = ({ language, handleLanguage }) => {
 				<Select
 					disableUnderline
 					variant="standard"
-					sx={{ color: "#fff", fontFamily: "Raleway Light" }}
+					sx={{ color: "#fff", fontFamily: "Raleway" }}
 					label={"RU"}
 					value={language}
+					IconComponent={Arrow}
 					onChange={handleLanguage}
 				>
 					<MenuItem value={"RU"}>RU</MenuItem>

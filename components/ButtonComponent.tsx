@@ -22,7 +22,7 @@ const ButtonComponent: FC<IButtonComponent> = ({ children, className, width, hei
 				height: height,
 				color: "#fff",
 				border: "1px solid #fff",
-				fontFamily: "Raleway Light",
+				fontFamily: "Raleway",
 				fontWeight: "300",
 				lineHeight: lineHeight,
 				fontSize: fontSize,
