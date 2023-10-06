@@ -27,6 +27,19 @@ const MainPage: FC = () => {
 	return (
 		<main className="main-block">
 			<Parallax blur={1} bgImage="/Main-bg.jpg" bgImageAlt="bg" strength={300} className='address'>
+				<div className='desktop-container'>
+					<Image
+						style={{ marginBottom: "30px" }}
+						alt="logo"
+						src={"Logo.svg"}
+						className="header-logo"
+						width={230}
+						height={40}
+					/>
+					<Typography className="sm-text" sx={{ fontSize: "20px", fontWeight: "300", marginBottom: "10px" }}>Москва, ул. Прозоровского 21</Typography>
+					<Typography className="" sx={{ fontSize: "20px", fontWeight: "300" }}>пн-пт 9:00 - 22:00</Typography>
+					<Typography className="mobile-text" sx={{ fontSize: "20px", fontWeight: "300", marginBottom: "30px" }}>сб-вс 10:00 - 23:00</Typography>
+				</div>
 				<div className='mobile-container'>
 					<Image
 						style={{ marginBottom: "30px" }}

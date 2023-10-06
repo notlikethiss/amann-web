@@ -298,6 +298,12 @@ a {
   display: none;
 }
 
+.desktop-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .photos-container {
   margin-top: 120px;
   display: flex;
@@ -309,6 +315,10 @@ a {
 }
 
 @media screen and (max-width: 700px) {
+
+  .desktop-container {
+    display: none;
+  }
 
   .mobile-container {
     margin-top: 100px;
