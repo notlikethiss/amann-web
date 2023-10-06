@@ -282,6 +282,10 @@ a {
   background: rgba(64, 69, 60, 1);
 }
 
+.mobile-menu-button {
+  display: none;
+}
+
 .photo-page {
   background: #191D1E;
 }
@@ -315,6 +319,10 @@ a {
 }
 
 @media screen and (max-width: 700px) {
+
+  .mobile-menu-button {
+    display: block;
+  }
 
   .desktop-container {
     display: none;
