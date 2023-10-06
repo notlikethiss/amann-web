@@ -205,23 +205,6 @@ a {
   align-items: center;
 }
 
-@media screen and (max-width: 400px) {
-  .address {
-    height: 450px;
-
-  }
-
-  .sm-text {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 300;
-  }
-
-  .react-parallax-content {
-    height: 100%;
-  }
-}
-
 .under-block {
   min-height: 650px;
   background: #E5D8CB;
@@ -273,6 +256,7 @@ a {
   align-items: center;
   margin-top: 70px;
   padding-bottom: 110px;
+  background: #E5D8CB;
 }
 
 .info-collage {
@@ -310,6 +294,10 @@ a {
   gap: 24px;
 }
 
+.mobile-container {
+  display: none;
+}
+
 .photos-container {
   margin-top: 120px;
   display: flex;
@@ -318,4 +306,75 @@ a {
   justify-content: center;
   padding: 0 0 0 64px;
   width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+
+  .mobile-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header {
+    padding: 20px 35px;
+  }
+
+  .address {
+    height: 450px;
+
+  }
+
+  .sm-text {
+    line-height: 25.2px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .react-parallax-content {
+    height: 100%;
+    justify-content: space-between
+  }
+
+  .desktop-links {
+    display: none;
+  }
+
+  .mobile-text {
+    line-height: 25.2px;
+    letter-spacing: 2px;
+    margin-bottom: 110px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .mobile-button {
+    margin-bottom: 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .address {
+    height: 450px;
+
+  }
+
+  .sm-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .react-parallax-content {
+    height: 100%;
+  }
+
+  .desktop-links {
+    display: none;
+  }
 }

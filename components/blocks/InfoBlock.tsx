@@ -3,10 +3,15 @@ import { FC } from 'react'
 import Image from 'next/image'
 import Typography from '@mui/material/Typography'
 import Link from 'next/link'
+import { CSSProperties } from '@mui/material/styles/createMixins';
 
-const InfoBlock: FC = () => {
+interface IInfoBlock {
+	style?: CSSProperties
+}
+
+const InfoBlock: FC<IInfoBlock> = ({ style }) => {
 	return (
-		<section className="information-block">
+		<section className={"information-block"} style={style}>
 			<div className="info-collage" style={{ marginLeft: "64px" }}>
 				<Image
 					alt='interier'
