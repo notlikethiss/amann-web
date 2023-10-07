@@ -712,9 +712,10 @@ a {
   .mobile-menu {
     padding: 45px 35px !important;
     display: flex !important;
+    justify-content: flex-start;
     flex-direction: column !important;
     width: 100% !important;
-    height: 91vh !important;
+    height: max-content !important;
     background: rgba(25, 29, 30, 1) !important;
   }
 
