@@ -44,10 +44,10 @@ const Header: FC<ILanguage> = ({ language, visibleMenu, handleLanguage, handleMe
 						<MenuItem value={"EN"}>EN</MenuItem>
 					</Select>
 				</Box>
-				<Button className="mobile-menu-button" onClick={handleMenu}>
+				<Button className="mobile-menu-button" onClick={handleMenu} disableRipple>
 					{!visibleMenu
 						? <Image alt="burger" src={"/assets/img/Burger.svg"} width={20} height={20} />
-						: <Image alt="cross" src={"/assets/img/Cross.svg"} width={30} height={30} />}
+						: <Image alt="cross" src={"/assets/img/Cross.svg"} width={35} height={35} />}
 				</Button>
 			</nav>
 		</header>
