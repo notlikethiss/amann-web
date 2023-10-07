@@ -15,8 +15,16 @@ const PhotoPage: NextPage = () => {
 						alignItems: "center",
 						justifyContent: "center",
 						width: "100%",
-					}}>
-						<Image alt='interier' src={"/assets/img/Interier-nine.jpg"} width={600} height={522} />
+					}}
+						className="photo-container"
+					>
+						<Image
+							alt='interier'
+							src={"/assets/img/Interier-nine.jpg"}
+							width={600}
+							height={522}
+							className="photo-interier"
+						/>
 						<Box
 							sx={{
 								display: "flex",
@@ -25,7 +33,9 @@ const PhotoPage: NextPage = () => {
 								justifyContent: "center",
 								marginLeft: "64px",
 								marginRight: "80px"
-							}}>
+							}}
+							className={"photo-info"}
+						>
 							<Typography
 								sx={{
 									textTransform: "uppercase",
@@ -33,14 +43,15 @@ const PhotoPage: NextPage = () => {
 									fontWeight: "800",
 									marginBottom: "24px"
 								}}
+								className="photo-heading"
 							>
 								Наши фото
 							</Typography>
-							<Typography>
-								Для того, чтобы Вы смогли прочувствовать атмосферу<br />
-								нашего ресторана мы подготовили подборку<br />
-								замечательных фотографий. Но это всё равно лишь <br />
-								фотографии - чтобы погрузиться в замечательную<br />
+							<Typography className="photo-description">
+								Для того, чтобы Вы смогли прочувствовать атмосферу
+								нашего ресторана мы подготовили подборку
+								замечательных фотографий. Но это всё равно лишь
+								фотографии - чтобы погрузиться в замечательную
 								атмосферу - просто приходите к нам в гости!
 							</Typography>
 						</Box>
@@ -56,12 +67,20 @@ const PhotoPage: NextPage = () => {
 							width: "1224px",
 							textAlign: "start"
 						}}
+						className="photos-heading"
 					>
 						Фотогалерея
 					</Typography>
 					<Box className={"photos-grid"}>
 						{imageArray.map((image, index) => (
-							<Image alt='interier' src={image.image} width={392} height={320} key={index} />
+							<Image
+								alt='interier'
+								src={image.image}
+								width={392}
+								height={320}
+								key={index}
+								className="mobile-photo-interier"
+							/>
 						))}
 					</Box>
 				</Box>

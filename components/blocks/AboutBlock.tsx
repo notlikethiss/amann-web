@@ -7,15 +7,26 @@ import Link from 'next/link'
 const AboutBlock: FC = () => {
 	return (
 		<section className="about-block">
-			<div>
-				<Typography sx={{ fontWeight: "800", fontSize: "35px", textTransform: "uppercase" }}>О нас</Typography>
+			<div className="about-info">
+				<Typography
+					sx={{
+						fontWeight: "800",
+						fontSize: "35px",
+						textTransform: "uppercase"
+					}}
+					className='info-heading'
+				>
+					О нас
+				</Typography>
 				<Typography
 					sx={{
 						marginTop: "21px",
 						width: "520px",
 						fontSize: "20px",
 						fontWeight: "300"
-					}}>
+					}}
+					className='about-description'
+				>
 					AMANN – это масштабный ресторанный проект
 					под руководством итальянского бренд-шефа Джона Смита.
 					Одновременно изысканная и простая итальянская
@@ -30,7 +41,9 @@ const AboutBlock: FC = () => {
 						width: "520px",
 						fontSize: "20px",
 						fontWeight: "300"
-					}}>
+					}}
+					className='about-description'
+				>
 					В ресторане AMANN работают профессиональные повара,
 					которые используют исключительно свежие продукты.
 					Так, блюда готовятся из исключительно свежих продуктов,
@@ -43,14 +56,16 @@ const AboutBlock: FC = () => {
 						fontSize: "20px",
 						borderBottom: "1px solid #fff"
 					}} href={"/about"}
+					className='info-link'
 				>
 					Подробнее о нас
 				</Link>
 			</div>
-			<div style={{ display: "flex", flexDirection: "column", width: "624px" }}>
+			<div style={{ display: "flex", flexDirection: "column", width: "624px" }} className='about-collage'>
 				<Image
 					alt='interier'
 					src={"/assets/img/Interier-three.jpg"}
+					className='about-interier-image'
 					width={550}
 					height={394}
 					style={{ position: "relative", right: "60px", top: "50px" }}
@@ -58,6 +73,7 @@ const AboutBlock: FC = () => {
 				<Image
 					alt='interier'
 					src={"/assets/img/Interier-four.jpg"}
+					className='about-interier-image'
 					width={550}
 					height={392}
 				/>

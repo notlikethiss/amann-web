@@ -12,16 +12,18 @@ interface IInfoBlock {
 const InfoBlock: FC<IInfoBlock> = ({ style }) => {
 	return (
 		<section className={"information-block"} style={style}>
-			<div className="info-collage" style={{ marginLeft: "64px" }}>
+			<div className="info-collage">
 				<Image
 					alt='interier'
 					src={"/assets/img/Interier-one.jpg"}
+					className='info-interier-image left-image'
 					width={394}
 					height={550}
 					style={{ position: "relative", left: "20px", top: "50px" }}
 				/>
 				<Image
 					alt='interier'
+					className='info-interier-image right-image'
 					src={"/assets/img/Interier-two.jpg"}
 					width={392}
 					height={550}
@@ -29,6 +31,7 @@ const InfoBlock: FC<IInfoBlock> = ({ style }) => {
 			</div>
 			<div className="info-text">
 				<Typography
+					className={"info-heading"}
 					fontWeight={800}
 					fontSize={35}
 					color={"#000"}
@@ -44,6 +47,7 @@ const InfoBlock: FC<IInfoBlock> = ({ style }) => {
 					lineHeight={"28px"}
 					marginTop={"21px"}
 					marginBottom={"30px"}
+					className='info-description'
 				>
 					Минималистичный ресторан AMANN,
 					расположенный в центре города на территории
@@ -58,6 +62,7 @@ const InfoBlock: FC<IInfoBlock> = ({ style }) => {
 						color: "#000",
 						borderBottom: "1px solid #000",
 					}}
+					className='info-link'
 					href={"/menu"}
 				>
 					Посмотреть меню

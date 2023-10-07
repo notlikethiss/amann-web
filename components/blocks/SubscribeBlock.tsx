@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { Box, Typography, Input } from '@mui/material';
 import ButtonComponent from '../ButtonComponent';
+import Image from 'next/image';
 
 const SubscribeBlock: FC = () => {
 
@@ -14,8 +15,9 @@ const SubscribeBlock: FC = () => {
 				alignItems: "center",
 				padding: "95px 0"
 			}}
+			className={"subscribe-block"}
 		>
-			<Box>
+			<Box className={"subscribe-container"}>
 				<Typography sx={{
 					fontSize: "35px",
 					fontWeight: "800",
@@ -24,11 +26,12 @@ const SubscribeBlock: FC = () => {
 					color: "#fff",
 					textTransform: "uppercase"
 				}}
+					className='subscribe-heading'
 				>
 					Подпишитесь<br /> на наши обновления
 				</Typography>
 
-				<Box sx={{ display: "flex", marginTop: "30px" }}>
+				<Box sx={{ display: "flex", marginTop: "30px" }} className={"subscribe-action"}>
 					<Input
 						placeholder='Email'
 						sx={{
@@ -47,9 +50,16 @@ const SubscribeBlock: FC = () => {
 							fontWeight: "500",
 							textTransform: "inherit"
 						}}
-						className={"button-component"}
+						className={"button-component subscribe-button"}
 					>
-						Подписаться
+						<p className='subscribe-desktop'>Подписаться</p>
+						<Image
+							alt='success'
+							src={"/assets/img/Success.svg"}
+							width={20}
+							height={20}
+							className='subscribe-mobile-icon'
+						/>
 					</ButtonComponent>
 				</Box>
 			</Box>

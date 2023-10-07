@@ -3,6 +3,7 @@ import { Box, Typography } from '@mui/material'
 import { Parallax } from 'react-parallax';
 import Image from 'next/image';
 import InfoBlock from '../components/blocks/InfoBlock';
+import AboutBlock from '../components/blocks/AboutBlock';
 
 const AboutPage: FC = () => {
 
@@ -15,8 +16,16 @@ const AboutPage: FC = () => {
 					alignItems: "center",
 					justifyContent: "center",
 					width: "100%",
-				}}>
-					<Image alt='interier' src={"/assets/img/Interier-three.jpg"} width={600} height={522} />
+				}}
+					className="photo-container"
+				>
+					<Image
+						alt='interier'
+						src={"/assets/img/Interier-three.jpg"}
+						width={600}
+						height={522}
+						className="photo-interier"
+					/>
 					<Box
 						sx={{
 							display: "flex",
@@ -25,7 +34,9 @@ const AboutPage: FC = () => {
 							justifyContent: "center",
 							marginLeft: "64px",
 							marginRight: "80px"
-						}}>
+						}}
+						className={"photo-info"}
+					>
 						<Typography
 							sx={{
 								textTransform: "uppercase",
@@ -33,29 +44,39 @@ const AboutPage: FC = () => {
 								fontWeight: "800",
 								marginBottom: "24px"
 							}}
+							className="photo-heading"
 						>
 							О нас
 						</Typography>
-						<Typography>
-							AMANN – это масштабный ресторанный проект под<br />
-							руководством итальянского бренд-шефа Джона Смита.<br />
-							Одновременно изысканная и простая итальянская кухня<br />
-							в руках маэстро приобретает новые краски и<br />
-							привлекает настоящих ценителей итальянской<br />
+						<Typography className="photo-description">
+							AMANN – это масштабный ресторанный проект под
+							руководством итальянского бренд-шефа Джона Смита.
+							Одновременно изысканная и простая итальянская кухня
+							в руках маэстро приобретает новые краски и
+							привлекает настоящих ценителей итальянской
 							классики кулинарного жанра.
 						</Typography>
 					</Box>
 				</Box>
 			</Parallax>
 			<InfoBlock style={{ margin: "0", paddingTop: "154px" }} />
+			<AboutBlock />
 			<Box sx={{
 				background: "rgba(25, 29, 30, 1)",
 				padding: "100px 64px",
 				display: "flex",
 				alignItems: "center",
 				justifyContent: "center"
-			}}>
-				<Image alt='chief' src={"/assets/img/Chief.jpg"} width={728} height={485} />
+			}}
+				className={"about-chief"}
+			>
+				<Image
+					alt='chief'
+					src={"/assets/img/Chief.jpg"}
+					width={728}
+					height={485}
+					className='photo-chief'
+				/>
 				<Box sx={{
 					position: "relative",
 					right: "64px",
@@ -65,13 +86,16 @@ const AboutPage: FC = () => {
 					flexDirection: "column",
 					justifyContent: "center",
 					background: "rgba(86, 98, 75, 1)"
-				}}>
+				}}
+					className={"chief-container"}
+				>
 					<Typography
 						sx={{
 							color: "#fff",
 							fontSize: "35px",
 							fontWeight: "800"
 						}}
+						className='chief-heading'
 					>
 						Наш шеф
 					</Typography>
@@ -81,12 +105,13 @@ const AboutPage: FC = () => {
 							fontSize: "20px",
 							fontWeight: "300"
 						}}
+						className='chief-description'
 					>
-						В ресторане AMANN работают<br />
-						профессиональные повара, которые<br />
-						используют исключительно свежие продукты.<br />
-						Так, блюда готовятся из исключительно свежих<br />
-						продуктов, которые доставляются<br />
+						В ресторане AMANN работают
+						профессиональные повара, которые
+						используют исключительно свежие продукты.
+						Так, блюда готовятся из исключительно свежих
+						продуктов, которые доставляются
 						непосредственно из Италии.
 					</Typography>
 				</Box>

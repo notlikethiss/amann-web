@@ -7,7 +7,7 @@ const ContactBlock: FC = () => {
 
 	return (
 		<section className="contact-block">
-			<Image alt="map" src={"/assets/img/Map.svg"} width={936} height={600} />
+			<Image alt="map" src={"/assets/img/Map.svg"} width={936} height={600} className='contact-image' />
 			<Box
 				sx={{
 					paddingLeft: "64px",
@@ -16,6 +16,7 @@ const ContactBlock: FC = () => {
 					alignItems: "baseline",
 					justifyContent: "center"
 				}}
+				className={"contact-container"}
 			>
 				<Typography
 					sx={{
@@ -25,6 +26,7 @@ const ContactBlock: FC = () => {
 						textTransform: "uppercase",
 						color: "#fff"
 					}}
+					className='info-heading'
 				>
 					Контакты
 				</Typography>
@@ -37,6 +39,7 @@ const ContactBlock: FC = () => {
 						lineHeight: "28px",
 						letterSpacing: "1px"
 					}}
+					className='contact-description'
 				>
 					8 800 123 45 67<br />
 					support@amann.com
@@ -50,6 +53,7 @@ const ContactBlock: FC = () => {
 						lineHeight: "28px",
 						letterSpacing: "1px"
 					}}
+					className='contact-description'
 				>
 					Москва, ул. Прозоровского 21
 				</Typography>
@@ -62,6 +66,7 @@ const ContactBlock: FC = () => {
 						lineHeight: "28px",
 						letterSpacing: "1px"
 					}}
+					className='contact-description'
 				>
 					пн-пт 9:00 - 22:00<br />
 					сб-вс 10:00 - 23:00
@@ -98,7 +103,7 @@ const ContactBlock: FC = () => {
 				</Box>
 
 				<ButtonComponent
-					className={"button-component"}
+					className={"button-component contact-button"}
 					styles={{
 						marginTop: "30px",
 						textTransform: "inherit",

@@ -29,6 +29,7 @@ const ButtonComponent: FC<IButtonComponent> = ({ children, className, width, hei
 				letterSpacing: letterSpacing,
 				borderRadius: "0",
 			}}
+			disableRipple
 			onClick={onClick}
 			className={className}
 			style={styles}

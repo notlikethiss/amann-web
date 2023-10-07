@@ -1,10 +1,12 @@
 import '../styles/globals.scss'
-import { useState, useCallback } from 'react'
+import { useState, useCallback, memo } from 'react'
 import type { AppProps } from 'next/app'
 import { createTheme, ThemeProvider } from "@mui/material/styles"
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { SelectChangeEvent } from '@mui/material'
+
+import MenuComponent from '../components/MenuComponent'
 
 const theme = createTheme({
   typography: {
@@ -15,11 +17,22 @@ const theme = createTheme({
 export interface ILanguage {
   language: string
   handleLanguage: (event: SelectChangeEvent) => void
+  visibleMenu: boolean
+  handleMenu: () => void
 }
 
 function App({ Component, pageProps }: AppProps) {
 
-  const [language, setLanguage] = useState("RU");
+  const [language, setLanguage] = useState<string>("RU");
+  const [visibleMenu, setVisibleMenu] = useState<boolean>(false);
+
+  const handleMenu = useCallback(() => {
+    if (visibleMenu) {
+      setVisibleMenu(false);
+    } else {
+      setVisibleMenu(true);
+    }
+  }, [visibleMenu, setVisibleMenu])
 
   const handleLanguage = useCallback((event: SelectChangeEvent) => {
     setLanguage(event.target.value as string)
@@ -27,9 +40,24 @@ function App({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider theme={theme}>
-      <Header language={language} handleLanguage={handleLanguage} />
-      <Component {...pageProps} />
-      <Footer language={language} handleLanguage={handleLanguage} />
+      <Header
+        language={language}
+        handleLanguage={handleLanguage}
+        visibleMenu={visibleMenu}
+        handleMenu={handleMenu}
+      />
+      {visibleMenu ? <MenuComponent visibleMenu={visibleMenu} handleMenu={handleMenu} /> : (
+        <>
+          <Component {...pageProps} />
+
+          <Footer
+            language={language}
+            handleLanguage={handleLanguage}
+            visibleMenu={visibleMenu}
+            handleMenu={handleMenu}
+          />
+        </>
+      )}
     </ThemeProvider>
   )
 }

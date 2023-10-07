@@ -1,4 +1,4 @@
-import { FC } from "react"
+import { FC, useState, useCallback } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import ButtonComponent from "./ButtonComponent"
@@ -7,8 +7,9 @@ import MenuItem from "@mui/material/MenuItem"
 import { ILanguage } from "../pages/_app";
 import Arrow from "./Arrow"
 import { Box, Button } from "@mui/material"
+import MenuComponent from "./MenuComponent"
 
-const Header: FC<ILanguage> = ({ language, handleLanguage }) => {
+const Header: FC<ILanguage> = ({ language, visibleMenu, handleLanguage, handleMenu }) => {
 
 	return (
 		<header className="header">
@@ -43,8 +44,10 @@ const Header: FC<ILanguage> = ({ language, handleLanguage }) => {
 						<MenuItem value={"EN"}>EN</MenuItem>
 					</Select>
 				</Box>
-				<Button className="mobile-menu-button">
-					<Image alt="burger" src={"/assets/img/Burger.svg"} width={20} height={20} />
+				<Button className="mobile-menu-button" onClick={handleMenu}>
+					{!visibleMenu
+						? <Image alt="burger" src={"/assets/img/Burger.svg"} width={20} height={20} />
+						: <Image alt="cross" src={"/assets/img/Cross.svg"} width={30} height={30} />}
 				</Button>
 			</nav>
 		</header>

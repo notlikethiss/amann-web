@@ -18,7 +18,9 @@ const BookingBlock: FC = () => {
 					flexDirection: "column",
 					alignItems: "flex-start",
 					justifyContent: "center"
-				}}>
+				}}
+				className={"booking-container"}
+			>
 				<Typography
 					sx={{
 						fontSize: "35px",
@@ -30,6 +32,7 @@ const BookingBlock: FC = () => {
 						textTransform: "uppercase",
 						marginBottom: "36px",
 					}}
+					className='booking-heading'
 				>
 					Забронировать столик
 				</Typography>
@@ -49,6 +52,7 @@ const BookingBlock: FC = () => {
 					label={"25 march"}
 					value={bookingDate}
 					IconComponent={Arrow}
+					className={"booking-select"}
 					onChange={(event: SelectChangeEvent) => setBookingDate(event.target.value)}
 				>
 					<MenuItem value={"25 march"}>25 марта, 2023</MenuItem>
@@ -72,6 +76,7 @@ const BookingBlock: FC = () => {
 					label={"12:30"}
 					value={bookingTime}
 					IconComponent={Arrow}
+					className={"booking-select"}
 					onChange={(event: SelectChangeEvent) => setBookingTime(event.target.value)}
 				>
 					<MenuItem value={"12:30"}>12:30</MenuItem>
@@ -95,6 +100,7 @@ const BookingBlock: FC = () => {
 					label={"2"}
 					value={bookingPeople}
 					IconComponent={Arrow}
+					className={"booking-select"}
 					onChange={(event: SelectChangeEvent) => setBookingPeople(event.target.value)}
 				>
 					<MenuItem value={"2"}>2 человека</MenuItem>
@@ -111,7 +117,7 @@ const BookingBlock: FC = () => {
 						fontWeight: "500",
 						textTransform: "inherit"
 					}}
-					className={"button-component"}
+					className={"button-component mobile-button"}
 				>
 					Найти столик
 				</ButtonComponent>
@@ -123,6 +129,7 @@ const BookingBlock: FC = () => {
 						lineHeight: "28px",
 						letterSpacing: "1px",
 					}}
+					className='booking-description'
 				>
 					Возможна бронь всего зала<br />
 					Для бронирования свыше 8 человек<br />
@@ -130,7 +137,7 @@ const BookingBlock: FC = () => {
 				</Typography>
 			</Box>
 
-			<Image alt='interier' src={"/assets/img/Interier-five.jpg"} width={600} height={638} />
+			<Image alt='interier' src={"/assets/img/Interier-five.jpg"} width={600} height={638} className='booking-image' />
 		</section>
 	);
 };

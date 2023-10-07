@@ -12,18 +12,18 @@ const Footer: FC<ILanguage> = ({ language, handleLanguage }) => {
 			<Image
 				alt="logo"
 				src={"Logo.svg"}
-				className="header-logo"
+				className="footer-logo"
 				width={180}
 				height={32}
 				style={{ marginRight: "128px" }}
 			/>
-			<div style={{ display: "flex", alignItems: "center" }}>
-				<Box sx={{ display: "flex", flexDirection: "column", marginRight: "99px" }}>
+			<div style={{ display: "flex", alignItems: "center" }} className="footer-items">
+				<Box sx={{ display: "flex", flexDirection: "column", marginRight: "99px" }} className={"footer-item"}>
 					<Typography sx={{ fontSize: "20px", fontWeight: "300", marginBottom: "9px" }}>© ООО “АМАНН”, 2023</Typography>
 					<Typography sx={{ fontSize: "20px", fontWeight: "300" }}>ИНН 000000000000</Typography>
 				</Box>
 
-				<Box sx={{ display: "flex", flexDirection: "column", marginRight: "137px" }}>
+				<Box sx={{ display: "flex", flexDirection: "column", marginRight: "137px" }} className={"footer-item"}>
 					<Link style={{ fontFamily: "Raleway", fontSize: "20px", fontWeight: "300", marginBottom: "9px" }} href={"/"}>
 						Главная
 					</Link>
@@ -32,7 +32,7 @@ const Footer: FC<ILanguage> = ({ language, handleLanguage }) => {
 					</Link>
 				</Box>
 
-				<Box sx={{ display: "flex", flexDirection: "column", marginRight: "93px" }}>
+				<Box sx={{ display: "flex", flexDirection: "column", marginRight: "93px" }} className={"footer-item"}>
 					<Link style={{ fontFamily: "Raleway", fontSize: "20px", fontWeight: "300", marginBottom: "9px" }} href={"/photos"}>
 						Фотографии
 					</Link>

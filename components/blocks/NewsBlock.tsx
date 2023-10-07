@@ -6,18 +6,20 @@ interface IEventCard {
 	image: string
 	name: string
 	date: string
+	className?: string
 }
 
-const EventCard = memo<IEventCard>(function EventCard({ image, name, date }) {
+const EventCard = memo<IEventCard>(function EventCard({ image, name, date, className }) {
 	return (
-		<Box sx={{ margin: "0 24px 0 0" }}>
-			<Image alt='event' src={image} width={288} height={331} />
+		<Box sx={{ margin: "0 24px 0 0" }} className={"event-card"}>
+			<Image alt='event' src={image} width={288} height={331} className={`${className} event-mobile-card`} />
 			<Typography
 				sx={{
 					color: "#000",
 					fontSize: "25px",
 					fontWeight: "300"
 				}}
+				className='event-heading'
 			>
 				{name}
 			</Typography>
@@ -46,10 +48,11 @@ const NewsBlock: FC = () => {
 					fontWeight: "800",
 					fontSize: "35px"
 				}}
+				className='news-heading'
 			>
 				Новостной блок
 			</Typography>
-			<Box sx={{ display: "flex", marginTop: "33px" }}>
+			<Box sx={{ display: "flex", marginTop: "33px" }} className={"event-row"}>
 				<EventCard
 					name={"Название мероприятия"}
 					image={"/assets/img/Event-one.jpg"}
