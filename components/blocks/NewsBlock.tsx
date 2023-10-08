@@ -52,7 +52,15 @@ const NewsBlock: FC = () => {
 			>
 				Новостной блок
 			</Typography>
-			<Box sx={{ display: "flex", marginTop: "33px", alignItems: "center", justifyContent: "space-between" }} className={"event-row"}>
+			<Box
+				sx={{
+					display: "flex",
+					marginTop: "33px",
+					alignItems: "center",
+					justifyContent: "space-between"
+				}}
+				className={"event-row"}
+			>
 				<EventCard
 					name={"Название мероприятия"}
 					image={"/assets/img/Event-one.jpg"}
