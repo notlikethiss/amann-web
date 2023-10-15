@@ -31,7 +31,7 @@ const AboutPage: FC = () => {
 				>
 					<Image
 						alt="interier"
-						src={"/assets/img/Interier-three.jpg"}
+						src={"/assets/img/interier/Interier-seven.webp"}
 						width={600}
 						height={522}
 						className="photo-interier"
