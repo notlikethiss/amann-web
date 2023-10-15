@@ -28,7 +28,7 @@ const MarqueeComponent: FC = () => {
 
 const MainPage: FC = () => {
 	return (
-		<main className="main-block">
+		<main className="main-block mobile-padding">
 			<Parallax
 				blur={1}
 				bgImage="/assets/img/Main.png"

@@ -14,7 +14,7 @@ import BookingBlock from "../components/blocks/BookingBlock";
 const PhotoPage: NextPage = () => {
 	return (
 		<>
-			<section className="photo-page">
+			<section className="photo-page mobile-padding">
 				<Parallax
 					blur={1}
 					bgImage="/assets/img/Photo-bg.png"

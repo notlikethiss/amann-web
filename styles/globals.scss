@@ -257,7 +257,6 @@ a {
 }
 
 .main-block {
-	padding-top: 60px;
 	background: #000;
 	height: max-content;
 }
@@ -488,6 +487,10 @@ a {
 
 	.navbar {
 		width: 40px !important;
+	}
+
+	.mobile-padding {
+		padding-top: 60px !important;
 	}
 
 	.main-marquee {

@@ -12,7 +12,7 @@ import MenuSwiper from "../components/MenuSwiper";
 
 const Menu: NextPage = () => {
 	return (
-		<section className="menu-page">
+		<section className="menu-page mobile-padding">
 			<Parallax
 				blur={1}
 				bgImage="/assets/img/Menu-bg.png"

@@ -12,7 +12,7 @@ import AboutBlock from "../components/blocks/AboutBlock";
 
 const AboutPage: FC = () => {
 	return (
-		<section className="about-page">
+		<section className="about-page mobile-padding">
 			<Parallax
 				blur={1}
 				bgImage="/assets/img/About-bg.png"
