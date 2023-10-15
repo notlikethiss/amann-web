@@ -1,8 +1,12 @@
-import type { FC } from "react";
+//main modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import Image from "next/image";
 
+//types
+import type { FC } from "react";
+
+//styles
 import "swiper/css";
 import "swiper/css/navigation";
 

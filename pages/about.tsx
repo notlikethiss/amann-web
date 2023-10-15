@@ -1,7 +1,12 @@
-import { FC } from "react";
+//main modules
 import { Box, Typography } from "@mui/material";
 import { Parallax } from "react-parallax";
 import Image from "next/image";
+
+//types
+import type { FC } from "react";
+
+//user components
 import InfoBlock from "../components/blocks/InfoBlock";
 import AboutBlock from "../components/blocks/AboutBlock";
 

@@ -1,9 +1,14 @@
-import type { NextPage } from "next";
+//main modules
 import Image from "next/image";
 import { Typography, Box } from "@mui/material";
 import { Parallax } from "react-parallax";
 import { imageArray } from "./api/imageArray";
 import Link from "next/link";
+
+//types
+import type { NextPage } from "next";
+
+//user components
 import BookingBlock from "../components/blocks/BookingBlock";
 
 const PhotoPage: NextPage = () => {

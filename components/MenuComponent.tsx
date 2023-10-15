@@ -1,7 +1,12 @@
-import { FC } from "react";
+//main modules
 import { Typography, Box } from "@mui/material";
-import ButtonComponent from "./ButtonComponent";
 import Link from "next/link";
+
+//types
+import type { FC } from "react";
+
+//user components
+import ButtonComponent from "./ButtonComponent";
 
 interface IMenu {
 	visibleMenu: boolean;

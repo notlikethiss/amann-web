@@ -1,10 +1,13 @@
-import { FC } from "react";
+//main modules
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import Link from "next/link";
 import { Box, MenuItem, Select } from "@mui/material";
 import { ILanguage } from "../pages/_app";
 import Arrow from "./Arrow";
+
+//types
+import type { FC } from "react";
 
 const Footer: FC<ILanguage> = ({ language, footerBg, handleLanguage }) => {
 	return (

@@ -1,8 +1,10 @@
-import { FC } from "react";
+//main modules
 import Image from "next/image";
 
-const Arrow: FC = () => {
+//types
+import type { FC } from "react";
 
+const Arrow: FC = () => {
 	return (
 		<Image
 			className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconStandard css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon"

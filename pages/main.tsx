@@ -1,8 +1,13 @@
-import { FC } from "react";
+//main modules
 import Image from "next/image";
 import { Typography } from "@mui/material";
-import ButtonComponent from "../components/ButtonComponent";
 import Marquee from "react-fast-marquee";
+import { Parallax } from "react-parallax";
+
+//types
+import type { FC } from "react";
+
+//user components
 import InfoBlock from "../components/blocks/InfoBlock";
 import AboutBlock from "../components/blocks/AboutBlock";
 import GalleryBlock from "../components/blocks/GalleryBlock";
@@ -10,7 +15,7 @@ import NewsBlock from "../components/blocks/NewsBlock";
 import BookingBlock from "../components/blocks/BookingBlock";
 import SubscribeBlock from "../components/blocks/SubscribeBlock";
 import ContactBlock from "../components/blocks/ContactBlock";
-import { Parallax } from "react-parallax";
+import ButtonComponent from "../components/ButtonComponent";
 
 const MarqueeComponent: FC = () => {
 	return (

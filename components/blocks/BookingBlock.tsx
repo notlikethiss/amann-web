@@ -1,4 +1,5 @@
-import { FC, useState } from "react";
+//main modules
+import { useState } from "react";
 import {
 	Select,
 	MenuItem,
@@ -6,8 +7,13 @@ import {
 	Box,
 	SelectChangeEvent,
 } from "@mui/material";
-import ButtonComponent from "../ButtonComponent";
 import Image from "next/image";
+
+//types
+import type { FC } from "react";
+
+//user components
+import ButtonComponent from "../ButtonComponent";
 import Arrow from "../Arrow";
 
 const BookingBlock: FC = () => {

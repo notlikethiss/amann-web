@@ -1,7 +1,12 @@
-import type { NextPage } from "next";
+//main modules
 import { Box, Typography } from "@mui/material";
 import { Parallax } from "react-parallax";
 import Image from "next/image";
+
+//types
+import type { NextPage } from "next";
+
+//user components
 import BookingBlock from "../components/blocks/BookingBlock";
 import MenuSwiper from "../components/MenuSwiper";
 

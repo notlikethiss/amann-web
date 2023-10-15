@@ -1,12 +1,19 @@
-import "../styles/globals.scss";
-import { useState, useCallback, memo } from "react";
-import type { AppProps } from "next/app";
+//main modules
+import Head from "next/head";
+import { useState, useCallback } from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { SelectChangeEvent } from "@mui/material";
 
+//types
+import type { AppProps } from "next/app";
+
+//global styles
+import "../styles/globals.scss";
+
+//user components
 import MenuComponent from "../components/MenuComponent";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const theme = createTheme({
 	typography: {
@@ -43,6 +50,9 @@ function App({ Component, pageProps }: AppProps) {
 
 	return (
 		<ThemeProvider theme={theme}>
+			<Head>
+				<title>AMANN</title>
+			</Head>
 			<Header
 				language={language}
 				handleLanguage={handleLanguage}

@@ -1,25 +1,40 @@
-import { FC, memo } from 'react'
-import { Box, Typography } from '@mui/material';
-import Image from 'next/image';
+//main modules
+import { memo } from "react";
+import { Box, Typography } from "@mui/material";
+import Image from "next/image";
+
+//types
+import type { FC } from "react";
 
 interface IEventCard {
-	image: string
-	name: string
-	date: string
-	className?: string
+	image: string;
+	name: string;
+	date: string;
+	className?: string;
 }
 
-const EventCard = memo<IEventCard>(function EventCard({ image, name, date, className }) {
+const EventCard = memo<IEventCard>(function EventCard({
+	image,
+	name,
+	date,
+	className,
+}) {
 	return (
 		<Box sx={{ margin: "0 24px 0 0" }} className={"event-card"}>
-			<Image alt='event' src={image} width={288} height={331} className={`${className} event-mobile-card`} />
+			<Image
+				alt="event"
+				src={image}
+				width={288}
+				height={331}
+				className={`${className} event-mobile-card`}
+			/>
 			<Typography
 				sx={{
 					color: "#000",
 					fontSize: "25px",
-					fontWeight: "300"
+					fontWeight: "300",
 				}}
-				className='event-heading'
+				className="event-heading"
 			>
 				{name}
 			</Typography>
@@ -27,7 +42,7 @@ const EventCard = memo<IEventCard>(function EventCard({ image, name, date, class
 				sx={{
 					color: "#000",
 					fontSize: "25px",
-					fontWeight: "300"
+					fontWeight: "300",
 				}}
 			>
 				{date}
@@ -36,9 +51,7 @@ const EventCard = memo<IEventCard>(function EventCard({ image, name, date, class
 	);
 });
 
-
 const NewsBlock: FC = () => {
-
 	return (
 		<section className="news-block">
 			<Typography
@@ -46,9 +59,9 @@ const NewsBlock: FC = () => {
 					color: "#000",
 					textTransform: "uppercase",
 					fontWeight: "800",
-					fontSize: "35px"
+					fontSize: "35px",
 				}}
-				className='news-heading'
+				className="news-heading"
 			>
 				Новостной блок
 			</Typography>
@@ -57,7 +70,7 @@ const NewsBlock: FC = () => {
 					display: "flex",
 					marginTop: "33px",
 					alignItems: "center",
-					justifyContent: "space-between"
+					justifyContent: "space-between",
 				}}
 				className={"event-row"}
 			>
