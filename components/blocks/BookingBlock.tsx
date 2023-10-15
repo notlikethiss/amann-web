@@ -1,11 +1,16 @@
-import { FC, useState } from 'react';
-import { Select, MenuItem, Typography, Box, SelectChangeEvent } from '@mui/material';
-import ButtonComponent from '../ButtonComponent';
-import Image from 'next/image';
-import Arrow from '../Arrow';
+import { FC, useState } from "react";
+import {
+	Select,
+	MenuItem,
+	Typography,
+	Box,
+	SelectChangeEvent,
+} from "@mui/material";
+import ButtonComponent from "../ButtonComponent";
+import Image from "next/image";
+import Arrow from "../Arrow";
 
 const BookingBlock: FC = () => {
-
 	const [bookingDate, setBookingDate] = useState("25 march");
 	const [bookingTime, setBookingTime] = useState("12:30");
 	const [bookingPeople, setBookingPeople] = useState("2");
@@ -17,7 +22,7 @@ const BookingBlock: FC = () => {
 					display: "flex",
 					flexDirection: "column",
 					alignItems: "flex-start",
-					justifyContent: "center"
+					justifyContent: "center",
 				}}
 				className={"booking-container"}
 			>
@@ -32,7 +37,7 @@ const BookingBlock: FC = () => {
 						textTransform: "uppercase",
 						marginBottom: "36px",
 					}}
-					className='booking-heading'
+					className="booking-heading"
 				>
 					Забронировать столик
 				</Typography>
@@ -47,7 +52,7 @@ const BookingBlock: FC = () => {
 						width: "400px",
 						height: "50px",
 						background: "rgba(255, 255, 255, 0.3)",
-						padding: "11px 20px 11px 23px"
+						padding: "11px 20px 11px 23px",
 					}}
 					label={"25 march"}
 					value={bookingDate}
@@ -71,7 +76,7 @@ const BookingBlock: FC = () => {
 						height: "50px",
 						background: "rgba(255, 255, 255, 0.3)",
 						padding: "11px 20px 11px 23px",
-						marginTop: "15px"
+						marginTop: "15px",
 					}}
 					label={"12:30"}
 					value={bookingTime}
@@ -95,13 +100,15 @@ const BookingBlock: FC = () => {
 						height: "50px",
 						background: "rgba(255, 255, 255, 0.3)",
 						padding: "11px 20px 11px 23px",
-						marginTop: "15px"
+						marginTop: "15px",
 					}}
 					label={"2"}
 					value={bookingPeople}
 					IconComponent={Arrow}
 					className={"booking-select"}
-					onChange={(event: SelectChangeEvent) => setBookingPeople(event.target.value)}
+					onChange={(event: SelectChangeEvent) =>
+						setBookingPeople(event.target.value)
+					}
 				>
 					<MenuItem value={"2"}>2 человека</MenuItem>
 					<MenuItem value={"3"}>3 человека</MenuItem>
@@ -115,7 +122,7 @@ const BookingBlock: FC = () => {
 						height: "56px",
 						fontSize: "20px",
 						fontWeight: "500",
-						textTransform: "inherit"
+						textTransform: "inherit",
 					}}
 					className={"button-component mobile-button"}
 				>
@@ -129,15 +136,24 @@ const BookingBlock: FC = () => {
 						lineHeight: "28px",
 						letterSpacing: "1px",
 					}}
-					className='booking-description'
+					className="booking-description"
 				>
-					Возможна бронь всего зала<br />
-					Для бронирования свыше 8 человек<br />
-					связывайтесь по номеру 8 800 123 45 67
+					Возможна бронь всего зала
+					<br />
+					Для бронирования свыше 8 человек
+					<br />
+					связывайтесь по номеру
+					<br />8 800 123 45 67
 				</Typography>
 			</Box>
 
-			<Image alt='interier' src={"/assets/img/Interier-five.jpg"} width={600} height={638} className='booking-image' />
+			<Image
+				alt="interier"
+				src={"/assets/img/interier/Interier-six.webp"}
+				width={600}
+				height={638}
+				className="booking-image"
+			/>
 		</section>
 	);
 };

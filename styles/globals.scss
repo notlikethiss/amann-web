@@ -1,843 +1,1022 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900;1000&display=swap');
-
 html,
 body {
-  padding: 0 !important;
-  margin: 0;
-  overflow-x: hidden;
+	padding: 0 !important;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+body {
+	overflow: hidden;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.eot');
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.woff2') format('woff2'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.woff') format('woff'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.ttf') format('truetype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.svg') format('svg');
-  font-weight: 100;
-  font-style: normal;
+	font-family: "Raleway";
+	src: url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.eot");
+	src:
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.woff2")
+			format("woff2"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.woff")
+			format("woff"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.ttf")
+			format("truetype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-100.svg")
+			format("svg");
+	font-weight: 100;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.eot');
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.woff2') format('woff2'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.woff') format('woff'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.ttf') format('truetype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.svg') format('svg');
-  font-weight: 200;
-  font-style: normal;
-
+	font-family: "Raleway";
+	src: url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.eot");
+	src:
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.woff2")
+			format("woff2"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.woff")
+			format("woff"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.ttf")
+			format("truetype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-200.svg")
+			format("svg");
+	font-weight: 200;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300-.eot');
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300-.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300.woff2') format('woff2'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300.woff') format('woff'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300.ttf') format('truetype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300.svg') format('svg');
-  font-weight: 300;
-  font-style: normal;
-
+	font-family: "Raleway";
+	src: url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300-.eot");
+	src:
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300-.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300.woff2")
+			format("woff2"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300.woff")
+			format("woff"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300.ttf")
+			format("truetype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-300.svg")
+			format("svg");
+	font-weight: 300;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.eot');
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.woff2') format('woff2'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.woff') format('woff'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.ttf') format('truetype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.svg') format('svg');
-  font-weight: 400;
-  font-style: normal;
-
+	font-family: "Raleway";
+	src: url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.eot");
+	src:
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.woff2")
+			format("woff2"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.woff")
+			format("woff"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.ttf")
+			format("truetype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-400.svg")
+			format("svg");
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.eot');
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.woff2') format('woff2'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.woff') format('woff'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.ttf') format('truetype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.svg') format('svg');
-  font-weight: 500;
-  font-style: normal;
-
+	font-family: "Raleway";
+	src: url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.eot");
+	src:
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.woff2")
+			format("woff2"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.woff")
+			format("woff"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.ttf")
+			format("truetype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-500.svg")
+			format("svg");
+	font-weight: 500;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.eot');
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.woff2') format('woff2'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.woff') format('woff'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.ttf') format('truetype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.svg') format('svg');
-  font-weight: 600;
-  font-style: normal;
-
+	font-family: "Raleway";
+	src: url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.eot");
+	src:
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.woff2")
+			format("woff2"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.woff")
+			format("woff"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.ttf")
+			format("truetype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-600.svg")
+			format("svg");
+	font-weight: 600;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.eot');
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.woff2') format('woff2'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.woff') format('woff'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.ttf') format('truetype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.svg') format('svg');
-  font-weight: 700;
-  font-style: normal;
-
+	font-family: "Raleway";
+	src: url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.eot");
+	src:
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.woff2")
+			format("woff2"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.woff")
+			format("woff"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.ttf")
+			format("truetype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-700.svg")
+			format("svg");
+	font-weight: 700;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.eot');
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.woff2') format('woff2'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.woff') format('woff'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.ttf') format('truetype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.svg') format('svg');
-  font-weight: 800;
-  font-style: normal;
-
+	font-family: "Raleway";
+	src: url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.eot");
+	src:
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.woff2")
+			format("woff2"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.woff")
+			format("woff"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.ttf")
+			format("truetype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-800.svg")
+			format("svg");
+	font-weight: 800;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.eot');
-  src: url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.woff2') format('woff2'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.woff') format('woff'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.ttf') format('truetype'),
-    url('https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.svg') format('svg');
-  font-weight: 900;
-  font-style: normal;
-
+	font-family: "Raleway";
+	src: url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.eot");
+	src:
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.woff2")
+			format("woff2"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.woff")
+			format("woff"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.ttf")
+			format("truetype"),
+		url("https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/font/rawline-900.svg")
+			format("svg");
+	font-weight: 900;
+	font-style: normal;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+	html {
+		color-scheme: dark;
+	}
 
-  body {
-    color: white;
-    background: black;
-  }
+	body {
+		color: white;
+		background: black;
+	}
 }
 
 @media (prefers-color-scheme: light) {
-  html {
-    color-scheme: dark;
-  }
+	html {
+		color-scheme: dark;
+	}
 
-  body {
-    color: white;
-    background: black;
-  }
+	body {
+		color: white;
+		background: black;
+	}
 }
 
 .header {
-  background: #191D1E;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  padding: 0 64px;
-  justify-content: space-between;
+	background: #000;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	padding: 0 64px;
+	justify-content: space-between;
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background: #191D1E;
-  padding: 52px 64px;
-  height: 160px;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 56px 64px;
+	height: 240px;
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .navlink {
-  font-size: 20px;
-  margin: 0 25px;
-  font-weight: 300;
-  font-family: Raleway;
+	font-size: 20px;
+	margin: 0 25px;
+	font-weight: 300;
+	font-family: Raleway;
+}
+
+.downloadMenu {
+	margin-top: 40px;
+	width: max-content;
+	font-family: Raleway;
+	font-weight: 300;
+	font-size: 20px;
+	border-bottom: 1px solid #fff;
+}
+
+.pdfMenu {
+	background: #fff;
 }
 
 .MuiSelect-icon {
-  fill: #fff !important;
+	fill: #fff !important;
 }
 
 .MuiSelect-select {
-  padding-right: 18px !important;
-}
-
-.main-block {
-  height: max-content;
-}
-
-.address {
-  height: 650px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	padding-right: 18px !important;
 }
 
 .react-parallax-bgimage {
-  background-color: rgba(25, 29, 30, 1);
+	background: transparent !important;
+}
+
+.main-block {
+	padding-top: 60px;
+	background: #000;
+	height: max-content;
+}
+
+.address {
+	height: 650px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.react-parallax-bgimage {
+	background-color: rgba(25, 29, 30, 1);
 }
 
 .react-parallax-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .under-block {
-  min-height: 650px;
-  background: #E5D8CB;
+	min-height: 650px;
+	background: #d9d4d0;
 }
 
 .button-component:hover {
-  background: #fff !important;
-  color: #191D1E !important;
+	background: #fff !important;
+	color: #191d1e !important;
 }
 
 .main-marquee {
-  padding-top: 11px;
-  font-family: Raleway;
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 49px;
-  letter-spacing: 5px;
-  color: #000;
+	padding-top: 11px;
+	font-family: Raleway;
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 49px;
+	letter-spacing: 5px;
+	color: #000;
 }
 
 .marquee-tilda {
-  padding-bottom: 14px;
-  margin: 0 16px;
-  font-size: 75px;
+	padding-bottom: 14px;
+	margin: 0 16px;
+	font-size: 75px;
 }
 
 .marquee-block {
-  display: flex;
-  height: max-content;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	height: max-content;
+	align-items: center;
+	justify-content: center;
 }
 
 .news-block {
-  background: #E5D8CB;
-  padding: 120px 64px;
+	background: #d9d4d0;
+	padding: 120px 64px;
 }
 
 .booking-block {
-  display: flex;
-  justify-content: space-between;
-  background: #56624B;
-  padding: 34px 64px;
+	display: flex;
+	justify-content: space-between;
+	background: #813a34;
+	padding: 34px 64px;
 }
 
 .information-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 70px;
-  padding-bottom: 110px;
-  background: #E5D8CB;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+	padding-bottom: 110px;
+	background: #d9d4d0;
 }
 
 .info-collage {
-  display: flex;
-  margin-left: 64px;
+	display: flex;
+	margin-left: 64px;
 }
 
 .info-text {
-  margin-left: 40px;
+	margin-left: 40px;
 }
 
 .about-block {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 103px 64px 100px 64px;
-  background: #40453C;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 103px 64px 100px 64px;
+	background: #4a4b4d;
+}
+
+.MuiSelect-select {
+	padding: 0 5px 0 0 !important;
 }
 
 .contact-block {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background: rgba(64, 69, 60, 1);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: #4a4b4d;
 }
 
 .mobile-additional-row {
-  display: none;
+	display: none;
 }
 
+//относится к кнопке в мобильном меню в хедере
 .mobile-menu-button {
-  display: none !important;
+	display: none !important;
 }
 
+//относится к странице меню
+.mobile-menu-page {
+	display: none;
+}
+
+.menu-page-container {
+	align-items: baseline;
+}
+
+.desktop-menu {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: baseline;
+	justify-content: center;
+}
+
+.menu-image {
+	width: max-content;
+}
 .photo-page {
-  background: #191D1E;
+	background: #000;
 }
 
 .photos-grid {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: repeat(3, 392px);
-  gap: 24px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: repeat(3, 392px);
+	gap: 24px;
 }
 
 .mobile-container {
-  display: none;
+	display: none;
 }
 
 .desktop-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .photos-container {
-  margin-top: 120px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 0 0 64px;
-  width: 100%;
+	margin-top: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 0 0 64px;
+	width: 100%;
 }
 
 .photo-description {
-  max-width: 400px;
+	max-width: 400px;
 }
 
 .subscribe-mobile-icon {
-  display: none;
+	display: none;
 }
 
 .chief-container {
-  max-width: 700px !important;
+	max-width: 700px !important;
+}
+
+.swiper-slide {
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-button-prev {
+	color: #fff !important;
+}
+
+.swiper-button-next {
+	color: #fff !important;
+}
+
+.swiper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
 }
 
 @media screen and (max-width: 1200px) {
-
-  .header {
-    height: 60px !important;
-  }
-
-  .navbar {
-    width: 40px !important;
-  }
-
-  .main-marquee {
-    padding: 0 !important;
-  }
-
-  .marquee-tilda {
-    padding: 0 0 5px 0 !important;
-    margin: 0 8px !important;
-    font-size: 38px !important;
-    font-weight: 400 !important;
-  }
-
-  .marquee-block {
-    font-weight: 500 !important;
-    font-size: 18px !important;
-  }
-
-  .header-logo {
-    width: 136px !important;
-    height: 23px !important;
-  }
-
-  .mobile-menu-button {
-    display: block !important;
-  }
-
-  .desktop-container {
-    display: none !important;
-  }
-
-  .event-mobile-card {
-    display: block !important;
-  }
-
-  .mobile-container {
-    margin-top: 100px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-
-  .header {
-    padding: 20px 35px !important;
-  }
-
-  .address {
-    height: 450px !important;
-
-  }
-
-  .sm-text {
-    line-height: 25.2px !important;
-    letter-spacing: 3px !important;
-    text-align: center !important;
-    font-size: 18px !important;
-    font-weight: 300 !important;
-  }
-
-  .subscribe-desktop {
-    display: block !important;
-  }
-
-  .react-parallax-content {
-    height: 100% !important;
-    justify-content: space-between !important;
-  }
-
-  .desktop-links {
-    display: none !important;
-  }
-
-  .mobile-text {
-    line-height: 25.2px !important;
-    letter-spacing: 2px !important;
-    margin-bottom: 110px !important;
-    text-align: center !important;
-    font-size: 18px !important;
-    font-weight: 300 !important;
-  }
-
-  //info
-
-  .mobile-button {
-    width: 100% !important;
-    margin-bottom: 22px !important;
-    font-size: 18px !important;
-  }
-
-  .info-interier-image {
-    max-width: 392px !important;
-    max-height: 550px !important;
-    width: 50% !important;
-    height: 50% !important;
-  }
-
-  .left-image {
-    left: 0 !important;
-  }
-
-  .right-image {
-    position: relative !important;
-    right: 50px !important;
-  }
-
-  .information-block {
-    flex-direction: column !important;
-    margin-top: 0 !important;
-    padding: 35px 35px 70px 35px !important;
-  }
-
-  .info-link {
-    font-size: 18px !important;
-  }
-
-  .info-collage {
-    width: 100% !important;
-    margin: 0 0 70px !important;
-    display: flex !important;
-    align-items: center !important;
-  }
-
-  .info-text {
-    margin: 0 !important;
-    width: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: baseline !important;
-  }
-
-  .info-description {
-    width: 100% !important;
-    margin-top: 10px !important;
-    font-size: 18px !important;
-  }
-
-  .info-heading {
-    font-size: 30px !important;
-    font-weight: 800 !important;
-    width: 230px !important;
-    line-height: 33px !important;
-  }
-
-  //about
-  .about-block {
-    display: flex !important;
-    flex-direction: column-reverse !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 35px 35px 70px 35px !important;
-  }
-
-  .about-collage {
-    margin-left: 70px !important;
-    width: 120% !important;
-    display: flex !important;
-    align-items: center !important;
-  }
-
-  .about-interier-image {
-    max-width: 550px !important;
-    max-height: 394px !important;
-    width: 70% !important;
-    height: 70% !important;
-  }
-
-  .about-info {
-    margin-top: 30px !important;
-    width: 100% !important;
-  }
-
-  .about-description {
-    width: 100% !important;
-    font-size: 18px !important;
-    font-weight: 300 !important;
-    line-height: 25.2px !important;
-    letter-spacing: 1px !important;
-  }
-
-  //gallery
-
-  .gallery-image {
-    width: 200px !important;
-    height: 164px !important;
-    margin: 6.5px !important;
-  }
-
-  .mobile-additional-row {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-
-  .gallery-heading {
-    font-size: 30px !important;
-    margin-left: 35px !important;
-    margin-bottom: 30px !important;
-  }
-
-  .gallery-info {
-    display: flex !important;
-    flex-direction: column !important;
-    margin: 30px 0 0 35px !important;
-  }
-
-  .gallery-description {
-    padding-right: 20px !important;
-    width: 100% !important;
-    margin: 0 !important;
-  }
-
-  .gallery-action {
-    margin-top: 20px !important;
-    justify-content: flex-start !important;
-  }
-
-  .gallery-button {
-    margin: 0 23px 0 0 !important;
-    font-size: 18px !important;
-    width: 162px !important;
-  }
-
-  //news
-  .news-block {
-    padding: 70px 35px !important;
-  }
-
-  .news-heading {
-    width: 250px !important;
-    font-size: 30px !important;
-    font-weight: 800 !important;
-  }
-
-  .event-mobile-card {
-    display: none !important;
-  }
-
-  .event-row {
-    align-items: baseline !important;
-    flex-direction: column !important;
-  }
-
-  .event-card {
-    margin: 10px 0 !important;
-  }
-
-  .event-heading {
-    font-size: 25px !important;
-    font-weight: 500 !important;
-  }
-
-  //booking
-
-  .booking-block {
-    flex-direction: column-reverse !important;
-    padding: 0 !important;
-  }
-
-  .booking-image {
-    width: 100% !important;
-    height: max-content !important;
-  }
-
-  .booking-container {
-    padding: 35px 30px !important;
-  }
-
-  .booking-select {
-    font-size: 18px !important;
-    font-weight: 300 !important;
-    line-height: 25.2px !important;
-    width: 100% !important;
-  }
-
-  .booking-heading {
-    font-size: 30px !important;
-    font-weight: 800 !important;
-  }
-
-  .booking-description {
-    font-size: 18px !important;
-  }
-
-  //subscribe
-
-  .subscribe-block {
-    width: 100% !important;
-    padding: 70px 31px !important;
-  }
-
-  .subscribe-container {
-    width: 100% !important;
-  }
-
-  .subscribe-desktop {
-    display: none !important;
-  }
-
-  .subscribe-mobile-icon {
-    display: block !important;
-  }
-
-  .subscribe-button {
-    width: 44px !important;
-    height: 44px !important;
-  }
-
-  .subscribe-action {
-    align-items: center !important;
-  }
-
-  .subscribe-heading {
-    font-size: 30px !important;
-    font-weight: 800 !important;
-    line-height: 33px !important;
-  }
-
-  //contact
-
-  .contact-block {
-    flex-direction: column !important;
-  }
-
-  .contact-image {
-    width: 100% !important;
-    height: max-content !important;
-  }
-
-  .contact-container {
-    padding: 50px 35px !important;
-  }
-
-  .contact-button {
-    display: none !important;
-  }
-
-  .contact-description {
-    font-size: 20px !important;
-    font-weight: 300 !important;
-  }
-
-  //footer
-
-  .footer {
-    align-items: flex-start !important;
-    flex-direction: column !important;
-    height: 100% !important;
-    padding: 50px 35px !important;
-  }
-
-  .footer-items {
-    align-items: flex-start !important;
-    flex-direction: column !important;
-  }
-
-  .footer-logo {
-    width: 184px !important;
-    height: 32px !important;
-    margin-bottom: 21px !important;
-  }
-
-  .footer-item {
-    margin: 7px 0 7px 0 !important;
-    font-size: 20px !important;
-  }
-
-  .mobile-menu {
-    padding: 45px 35px !important;
-    display: flex !important;
-    justify-content: flex-start;
-    flex-direction: column !important;
-    width: 100% !important;
-    height: max-content !important;
-    background: rgba(25, 29, 30, 1) !important;
-  }
-
-  .menu-link {
-    margin: 14px 0 !important;
-    font-family: Raleway !important;
-    font-size: 18px !important;
-    font-weight: 300 !important;
-  }
-
-  //photo
-
-  .photo-container {
-    flex-direction: column !important;
-    height: max-content !important;
-  }
-
-  .photo-interier {
-    width: 100% !important;
-    height: max-content !important;
-  }
-
-  .photo-info {
-    padding: 30px 35px !important;
-    width: 100% !important;
-    justify-content: flex-start !important;
-  }
-
-  .photo-heading {
-    font-size: 30px !important;
-    font-weight: 800 !important;
-  }
-
-  .photo-description {
-    line-height: 25.2px !important;
-    font-size: 18px !important;
-    font-weight: 300 !important;
-  }
-
-  .photos-container {
-    margin-top: 0 !important;
-    padding: 70px 35px !important;
-  }
-
-  .photos-grid {
-    grid-template-columns: 160px 160px !important;
-    gap: 10px !important;
-  }
-
-  .photos-heading {
-    text-align: left !important;
-    width: max-content !important;
-  }
-
-  .mobile-photo-interier {
-    width: 160px !important;
-    height: 131px !important;
-  }
-
-  .about-chief {
-    padding: 70px 0 0 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-  }
-
-  .photo-chief {
-    position: relative !important;
-    right: 50px !important;
-    width: 100% !important;
-    min-width: 400px !important;
-    height: max-content !important;
-  }
-
-  .chief-container {
-    max-width: 100% !important;
-    padding: 30px !important;
-    position: relative !important;
-    bottom: 30px !important;
-    left: 48px !important;
-  }
-
-  .chief-heading {
-    font-size: 30px !important;
-    font-weight: 800 !important;
-  }
-
-  .chief-description {
-    padding-right: 20px !important;
-    font-size: 18px !important;
-    font-weight: 300 !important;
-  }
+	.header {
+		z-index: 100;
+		background: #000;
+		position: fixed;
+		border-bottom: 1px solid #333333;
+	}
+
+	.mobile-menu-page {
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		justify-content: center !important;
+	}
+
+	.menu-image {
+		width: 330px;
+		height: max-content;
+	}
+
+	.desktop-menu {
+		display: none !important;
+	}
+
+	.header {
+		height: 60px !important;
+	}
+
+	.navbar {
+		width: 40px !important;
+	}
+
+	.main-marquee {
+		padding: 0 !important;
+	}
+
+	.marquee-tilda {
+		padding: 0 0 5px 0 !important;
+		margin: 0 8px !important;
+		font-size: 38px !important;
+		font-weight: 400 !important;
+	}
+
+	.marquee-block {
+		font-weight: 500 !important;
+		font-size: 18px !important;
+	}
+
+	.header-logo {
+		width: 136px !important;
+		height: 23px !important;
+	}
+
+	.mobile-menu-button {
+		display: block !important;
+	}
+
+	.desktop-container {
+		display: none !important;
+	}
+
+	.event-mobile-card {
+		display: block !important;
+	}
+
+	.mobile-container {
+		margin-top: 100px !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		justify-content: center !important;
+	}
+
+	.main-logo {
+		width: 232px !important;
+		height: 40px !important;
+	}
+
+	.header {
+		padding: 20px 35px !important;
+	}
+
+	.address {
+		height: 450px !important;
+	}
+
+	.sm-text {
+		line-height: 25.2px !important;
+		letter-spacing: 3px !important;
+		text-align: center !important;
+		font-size: 18px !important;
+		font-weight: 300 !important;
+	}
+
+	.subscribe-desktop {
+		display: block !important;
+	}
+
+	.react-parallax-content {
+		height: 100% !important;
+		justify-content: space-between !important;
+	}
+
+	.desktop-links {
+		display: none !important;
+	}
+
+	.mobile-text {
+		line-height: 25.2px !important;
+		letter-spacing: 2px !important;
+		margin-bottom: 110px !important;
+		text-align: center !important;
+		font-size: 18px !important;
+		font-weight: 300 !important;
+	}
+
+	//info
+
+	.mobile-button {
+		width: 90% !important;
+		margin-bottom: 22px !important;
+		font-size: 18px !important;
+	}
+
+	.info-interier-image {
+		max-width: 392px !important;
+		max-height: 550px !important;
+		width: 50% !important;
+		height: 50% !important;
+	}
+
+	.left-image {
+		left: 0 !important;
+	}
+
+	.right-image {
+		position: relative !important;
+		right: 50px !important;
+	}
+
+	.information-block {
+		flex-direction: column !important;
+		margin-top: 0 !important;
+		padding: 35px 35px 70px 35px !important;
+	}
+
+	.info-link {
+		font-size: 18px !important;
+	}
+
+	.info-collage {
+		width: 100% !important;
+		margin: 0 0 70px !important;
+		display: flex !important;
+		align-items: center !important;
+	}
+
+	.info-text {
+		margin: 0 !important;
+		width: 100% !important;
+		display: flex !important;
+		flex-direction: column !important;
+		justify-content: center !important;
+		align-items: baseline !important;
+	}
+
+	.info-description {
+		width: 100% !important;
+		margin-top: 10px !important;
+		font-size: 18px !important;
+	}
+
+	.info-heading {
+		font-size: 30px !important;
+		font-weight: 800 !important;
+		width: 230px !important;
+		line-height: 33px !important;
+	}
+
+	//about
+	.about-block {
+		display: flex !important;
+		flex-direction: column-reverse !important;
+		align-items: center !important;
+		justify-content: center !important;
+		padding: 35px 35px 70px 35px !important;
+	}
+
+	.about-collage {
+		margin-left: 70px !important;
+		width: 120% !important;
+		display: flex !important;
+		align-items: center !important;
+	}
+
+	.about-interier-image {
+		max-width: 550px !important;
+		max-height: 394px !important;
+		width: 70% !important;
+		height: 70% !important;
+	}
+
+	.about-info {
+		margin-top: 30px !important;
+		width: 100% !important;
+	}
+
+	.about-description {
+		width: 100% !important;
+		font-size: 18px !important;
+		font-weight: 300 !important;
+		line-height: 25.2px !important;
+		letter-spacing: 1px !important;
+	}
+
+	//gallery
+
+	.gallery-image {
+		width: 200px !important;
+		height: 164px !important;
+		margin: 6.5px !important;
+	}
+
+	.mobile-additional-row {
+		display: flex !important;
+		flex-direction: column !important;
+	}
+
+	.gallery-heading {
+		font-size: 30px !important;
+		margin-left: 35px !important;
+		margin-bottom: 30px !important;
+	}
+
+	.gallery-info {
+		display: flex !important;
+		flex-direction: column !important;
+		margin: 30px 0 0 35px !important;
+	}
+
+	.gallery-description {
+		padding-right: 20px !important;
+		width: 100% !important;
+		margin: 0 !important;
+	}
+
+	.gallery-action {
+		margin-top: 20px !important;
+		justify-content: flex-start !important;
+	}
+
+	.gallery-button {
+		margin: 0 23px 0 0 !important;
+		font-size: 18px !important;
+		width: 162px !important;
+	}
+
+	//news
+	.news-block {
+		padding: 70px 35px !important;
+	}
+
+	.news-heading {
+		width: 250px !important;
+		font-size: 30px !important;
+		font-weight: 800 !important;
+	}
+
+	.event-mobile-card {
+		display: none !important;
+	}
+
+	.event-row {
+		align-items: baseline !important;
+		flex-direction: column !important;
+	}
+
+	.event-card {
+		margin: 10px 0 !important;
+	}
+
+	.event-heading {
+		font-size: 25px !important;
+		font-weight: 500 !important;
+	}
+
+	//booking
+
+	.booking-block {
+		flex-direction: column-reverse !important;
+		padding: 0 !important;
+	}
+
+	.booking-image {
+		width: 100% !important;
+		height: max-content !important;
+	}
+
+	.booking-container {
+		padding: 35px 30px !important;
+	}
+
+	.booking-select {
+		font-size: 18px !important;
+		font-weight: 300 !important;
+		line-height: 25.2px !important;
+		width: 100% !important;
+	}
+
+	.booking-heading {
+		font-size: 30px !important;
+		font-weight: 800 !important;
+	}
+
+	.booking-description {
+		font-size: 18px !important;
+	}
+
+	//subscribe
+
+	.subscribe-block {
+		width: 100% !important;
+		padding: 70px 31px !important;
+	}
+
+	.subscribe-container {
+		width: 100% !important;
+	}
+
+	.subscribe-desktop {
+		display: none !important;
+	}
+
+	.subscribe-mobile-icon {
+		display: block !important;
+	}
+
+	.subscribe-button {
+		width: 44px !important;
+		height: 44px !important;
+	}
+
+	.subscribe-action {
+		align-items: center !important;
+	}
+
+	.subscribe-heading {
+		font-size: 30px !important;
+		font-weight: 800 !important;
+		line-height: 33px !important;
+	}
+
+	//contact
+
+	.contact-block {
+		flex-direction: column !important;
+	}
+
+	.contact-image {
+		width: 100% !important;
+		height: max-content !important;
+	}
+
+	.contact-container {
+		padding: 50px 35px !important;
+	}
+
+	.contact-button {
+		display: none !important;
+	}
+
+	.contact-description {
+		font-size: 20px !important;
+		font-weight: 300 !important;
+	}
+
+	//footer
+
+	.footer {
+		align-items: flex-start !important;
+		flex-direction: column !important;
+		height: 100% !important;
+		padding: 50px 35px !important;
+	}
+
+	.footer-items {
+		align-items: flex-start !important;
+		flex-direction: column !important;
+	}
+
+	.footer-logo {
+		width: 184px !important;
+		height: 32px !important;
+		margin-bottom: 21px !important;
+	}
+
+	.footer-item {
+		margin: 7px 0 7px 0 !important;
+		font-size: 20px !important;
+	}
+
+	.mobile-menu {
+		padding: 45px 35px !important;
+		display: flex !important;
+		justify-content: flex-start;
+		flex-direction: column !important;
+		width: 100% !important;
+		height: max-content !important;
+		background: #000 !important;
+	}
+
+	.menu-link {
+		margin: 14px 0 !important;
+		font-family: Raleway !important;
+		font-size: 18px !important;
+		font-weight: 300 !important;
+	}
+
+	.menu-links {
+		margin: 25px 0 48px 0 !important;
+	}
+
+	.instagram-link {
+		font-size: 18px !important;
+	}
+
+	.instagram-warning {
+		font-size: 14px !important;
+		letter-spacing: 0px !important;
+		margin-bottom: 70px !important;
+	}
+
+	//photo
+
+	.photo-container {
+		flex-direction: column !important;
+		height: max-content !important;
+	}
+
+	.photo-interier {
+		width: 100% !important;
+		height: max-content !important;
+	}
+
+	.photo-info {
+		padding: 30px 35px 70px 35px !important;
+		width: 100% !important;
+		justify-content: flex-start !important;
+	}
+
+	.photo-heading {
+		font-size: 30px !important;
+		font-weight: 800 !important;
+	}
+
+	.photo-description {
+		line-height: 25.2px !important;
+		font-size: 18px !important;
+		font-weight: 300 !important;
+	}
+
+	.photos-container {
+		margin-top: 0 !important;
+		padding: 70px 35px !important;
+	}
+
+	.photos-grid {
+		grid-template-columns: 160px 160px !important;
+		gap: 10px !important;
+	}
+
+	.photos-heading {
+		text-align: left !important;
+		width: max-content !important;
+	}
+
+	.mobile-photo-interier {
+		width: 160px !important;
+		height: 131px !important;
+	}
+
+	.about-chief {
+		padding: 70px 0 0 0 !important;
+		display: flex !important;
+		flex-direction: column !important;
+	}
+
+	.photo-chief {
+		position: relative !important;
+		right: 50px !important;
+		width: 100% !important;
+		min-width: 400px !important;
+		height: max-content !important;
+	}
+
+	.chief-container {
+		max-width: 100% !important;
+		padding: 30px !important;
+		position: relative !important;
+		bottom: 30px !important;
+		left: 48px !important;
+	}
+
+	.chief-heading {
+		font-size: 30px !important;
+		font-weight: 800 !important;
+	}
+
+	.chief-description {
+		padding-right: 20px !important;
+		font-size: 18px !important;
+		font-weight: 300 !important;
+	}
+
+	//menu page
+	.menu-info {
+		padding-bottom: 32px !important;
+	}
+
+	.downloadMenu {
+		font-size: 18px !important;
+		width: max-content !important;
+		text-align: center !important;
+	}
+
+	.menu-page-container {
+		align-items: center !important;
+	}
+
+	.time-location {
+		flex-direction: column-reverse;
+		margin-bottom: 41px !important;
+	}
+
+	.footer-text {
+		margin-top: 15px;
+	}
+
+	.number-email {
+		margin-bottom: 41px !important;
+	}
 }
 
 @media screen and (max-width: 400px) {
-  .address {
-    height: 450px;
+	.address {
+		height: 450px;
+	}
 
-  }
+	.sm-text {
+		text-align: center;
+		font-size: 18px;
+		font-weight: 300;
+	}
 
-  .sm-text {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 300;
-  }
+	.react-parallax-content {
+		height: 100%;
+	}
 
-  .react-parallax-content {
-    height: 100%;
-  }
-
-  .desktop-links {
-    display: none;
-  }
+	.desktop-links {
+		display: none;
+	}
 }
