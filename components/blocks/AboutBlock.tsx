@@ -73,7 +73,7 @@ const AboutBlock: FC<IAbout> = ({ heading, link }) => {
 			>
 				<Image
 					alt="interier"
-					src={"/assets/img/Interier-three.jpg"}
+					src={"/assets/img/interier/Interier-three.webp"}
 					className="about-interier-image"
 					width={550}
 					height={394}
@@ -81,7 +81,7 @@ const AboutBlock: FC<IAbout> = ({ heading, link }) => {
 				/>
 				<Image
 					alt="interier"
-					src={"/assets/img/Interier-four.jpg"}
+					src={"/assets/img/interier/Food-two.webp"}
 					className="about-interier-image"
 					width={550}
 					height={392}
