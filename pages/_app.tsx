@@ -52,6 +52,7 @@ function App({ Component, pageProps }: AppProps) {
 		<ThemeProvider theme={theme}>
 			<Head>
 				<title>AMANN</title>
+				<meta name="description" content="AMANN - restaurant" />
 			</Head>
 			<Header
 				language={language}

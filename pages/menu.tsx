@@ -95,35 +95,35 @@ const Menu: NextPage = () => {
 					<Image
 						className="menu-image"
 						alt="menu-main"
-						src={"/assets/img/interier/Menu-main.svg"}
+						src={"/assets/img/interier/Menu-main.webp"}
 						width={330}
 						height={466}
 					/>
 					<Image
 						className="menu-image"
 						alt="menu-main"
-						src={"/assets/img/interier/Menu-beverages.svg"}
+						src={"/assets/img/interier/Menu-beverages.webp"}
 						width={330}
 						height={466}
 					/>
 					<Image
 						className="menu-image"
 						alt="menu-main"
-						src={"/assets/img/interier/Menu-beverages-two.svg"}
+						src={"/assets/img/interier/Menu-beverages-two.webp"}
 						width={330}
 						height={466}
 					/>
 					<Image
 						className="menu-image"
 						alt="menu-main"
-						src={"/assets/img/interier/Menu-cocktails.svg"}
+						src={"/assets/img/interier/Menu-cocktails.webp"}
 						width={330}
 						height={466}
 					/>
 					<Image
 						className="menu-image"
 						alt="menu-main"
-						src={"/assets/img/interier/Menu-cocktails-two.svg"}
+						src={"/assets/img/interier/Menu-cocktails-two.webp"}
 						width={330}
 						height={466}
 					/>

@@ -18,7 +18,7 @@ const MenuSwiper: FC = () => {
 					<Image
 						className="menu-image"
 						alt="menu"
-						src={"/assets/img/interier/Menu-main.svg"}
+						src={"/assets/img/interier/Menu-main.webp"}
 						width={1224}
 						height={800}
 					/>
@@ -27,7 +27,7 @@ const MenuSwiper: FC = () => {
 					<Image
 						className="menu-image"
 						alt="menu-main"
-						src={"/assets/img/interier/Menu-beverages.svg"}
+						src={"/assets/img/interier/Menu-beverages.webp"}
 						width={1224}
 						height={800}
 					/>
@@ -36,7 +36,7 @@ const MenuSwiper: FC = () => {
 					<Image
 						className="menu-image"
 						alt="menu-main"
-						src={"/assets/img/interier/Menu-beverages-two.svg"}
+						src={"/assets/img/interier/Menu-beverages-two.webp"}
 						width={1224}
 						height={800}
 					/>
@@ -45,7 +45,7 @@ const MenuSwiper: FC = () => {
 					<Image
 						className="menu-image"
 						alt="menu-main"
-						src={"/assets/img/interier/Menu-cocktails.svg"}
+						src={"/assets/img/interier/Menu-cocktails.webp"}
 						width={1224}
 						height={800}
 					/>
@@ -54,7 +54,7 @@ const MenuSwiper: FC = () => {
 					<Image
 						className="menu-image"
 						alt="menu-main"
-						src={"/assets/img/interier/Menu-cocktails-two.svg"}
+						src={"/assets/img/interier/Menu-cocktails-two.webp"}
 						width={1224}
 						height={800}
 					/>
