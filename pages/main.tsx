@@ -31,7 +31,7 @@ const MainPage: FC = () => {
 		<main className="main-block mobile-padding">
 			<Parallax
 				blur={1}
-				bgImage="/assets/img/Main.png"
+				bgImage="/assets/img/Main.webp"
 				bgImageAlt="bg"
 				strength={300}
 				className="address"
@@ -140,7 +140,7 @@ const MainPage: FC = () => {
 
 				<InfoBlock />
 
-				<AboutBlock heading="О нас" link />
+				<AboutBlock heading="НАШ РЕСТОРАН" link />
 
 				<GalleryBlock />
 

@@ -75,7 +75,7 @@ const Header: FC<ILanguage> = ({
 							height={20}
 						/>
 					) : (
-						<Image alt="cross" src={"/assets/img/Cross.svg"} width={35} height={35} />
+						<Image alt="cross" src={"/assets/img/Cross.svg"} width={20} height={20} />
 					)}
 				</Button>
 			</nav>

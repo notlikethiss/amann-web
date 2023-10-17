@@ -10,6 +10,7 @@ import type { FC } from "react";
 
 //user components
 import ButtonComponent from "../ButtonComponent";
+import { Box } from "@mui/material";
 
 interface IMarqueeComponent {
 	image: string;
@@ -17,13 +18,16 @@ interface IMarqueeComponent {
 
 const MarqueeComponent: FC<IMarqueeComponent> = ({ image }) => {
 	return (
-		<Image
-			alt="interier"
-			src={image}
-			className={"gallery-image"}
-			width={392}
-			height={320}
-			style={{ margin: "12px 12px" }}
+		<Box
+			sx={{
+				backgroundImage: `url(${image})`,
+				backgroundSize: "cover",
+				backgroundPositionX: "center",
+				width: "392px",
+				height: "390px",
+				margin: "12px 12px",
+			}}
+			className="gallery-image"
 		/>
 	);
 };
@@ -54,8 +58,8 @@ const GalleryBlock: FC = () => {
 				<MemoMarqueeComp image={"/assets/img/interier/Food-three.webp"} />
 				<MemoMarqueeComp image={"/assets/img/interier/Beverage-one.webp"} />
 				<MemoMarqueeComp image={"/assets/img/interier/Food-one.webp"} />
-				<MemoMarqueeComp image={"/assets/img/interier/Food-two.webp"} />
-				<MemoMarqueeComp image={"/assets/img/interier/Food-three.webp"} />
+				<MemoMarqueeComp image={"/assets/img/interier/Food-four.webp"} />
+				<MemoMarqueeComp image={"/assets/img/interier/Beverage-three.webp"} />
 				<MemoMarqueeComp image={"/assets/img/interier/Beverage-one.webp"} />
 				<MemoMarqueeComp image={"/assets/img/interier/Food-one.webp"} />
 			</Marquee>
@@ -64,8 +68,8 @@ const GalleryBlock: FC = () => {
 				<MemoMarqueeComp image={"/assets/img/interier/Interier-five.webp"} />
 				<MemoMarqueeComp image={"/assets/img/interier/Interier-three.webp"} />
 				<MemoMarqueeComp image={"/assets/img/interier/Interier-seven.webp"} />
-				<MemoMarqueeComp image={"/assets/img/interier/Interier-four.webp"} />
-				<MemoMarqueeComp image={"/assets/img/interier/Interier-five.webp"} />
+				<MemoMarqueeComp image={"/assets/img/interier/Interier-twelve.webp"} />
+				<MemoMarqueeComp image={"/assets/img/interier/Interier-ten.webp"} />
 				<MemoMarqueeComp image={"/assets/img/interier/Interier-three.webp"} />
 				<MemoMarqueeComp image={"/assets/img/interier/Interier-seven.webp"} />
 			</Marquee>
@@ -75,8 +79,8 @@ const GalleryBlock: FC = () => {
 					<MemoMarqueeComp image={"/assets/img/interier/Food-three.webp"} />
 					<MemoMarqueeComp image={"/assets/img/interier/Beverage-one.webp"} />
 					<MemoMarqueeComp image={"/assets/img/interier/Food-one.webp"} />
-					<MemoMarqueeComp image={"/assets/img/interier/Food-two.webp"} />
-					<MemoMarqueeComp image={"/assets/img/interier/Food-three.webp"} />
+					<MemoMarqueeComp image={"/assets/img/interier/Food-four.webp"} />
+					<MemoMarqueeComp image={"/assets/img/interier/Beverage-three.webp"} />
 					<MemoMarqueeComp image={"/assets/img/interier/Beverage-one.webp"} />
 					<MemoMarqueeComp image={"/assets/img/interier/Food-one.webp"} />
 				</Marquee>

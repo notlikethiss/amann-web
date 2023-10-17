@@ -39,7 +39,7 @@ const InfoBlock: FC<IInfoBlock> = ({ style }) => {
 					color={"#000"}
 					textTransform={"uppercase"}
 				>
-					Короткий заголовок
+					Почему Amann?
 				</Typography>
 				<Typography
 					width={445}
@@ -51,9 +51,9 @@ const InfoBlock: FC<IInfoBlock> = ({ style }) => {
 					marginBottom={"30px"}
 					className="info-description"
 				>
-					Минималистичный ресторан AMANN, расположенный в центре города на территории
-					отеля «Москва» в самом сердце столицы, приглашает гостей попробовать блюда
-					итальянской кухни.
+					Название AMANN вдохновлено восточной культурой, в пер. с арабского означает
+					«безопасность / спокойствие», а специальный шрифт с заостренными буквами
+					отсылает к очертаниям песчаных холмов.
 				</Typography>
 				<Link
 					style={{

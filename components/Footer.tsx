@@ -122,7 +122,7 @@ const Footer: FC<ILanguage> = ({ language, footerBg, handleLanguage }) => {
 					<Typography
 						sx={{ fontSize: "14px", fontWeight: "300", lineHeight: "17.57px" }}
 					>
-						* запрещенная на территории Российской Федерации организация
+						* запрещенная на территории <br /> Российской Федерации организация
 					</Typography>
 				</Box>
 				<Box

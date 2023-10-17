@@ -77,18 +77,25 @@ const Menu: NextPage = () => {
 				}}
 			>
 				<section className="desktop-menu">
-					<Typography
-						sx={{
-							textTransform: "uppercase",
-							fontSize: "35px",
-							fontWeight: "800",
-							marginBottom: "40px",
-						}}
-						className="photo-heading"
-					>
-						Меню
-					</Typography>
+					<Box sx={{ width: "100%" }}>
+						<Typography
+							sx={{
+								textTransform: "uppercase",
+								fontSize: "35px",
+								fontWeight: "800",
+								marginBottom: "40px",
+							}}
+							className="desktop-menu-heading"
+						>
+							Меню
+						</Typography>
+					</Box>
 					<MenuSwiper />
+					<Box className={"download-menu-link"}>
+						<a className="downloadMenu" href="/assets/img/Menu.pdf" download>
+							Скачать наше меню в формате pdf
+						</a>
+					</Box>
 				</section>
 
 				<section className="mobile-menu-page">
@@ -127,10 +134,12 @@ const Menu: NextPage = () => {
 						width={330}
 						height={466}
 					/>
+					<Box className={"download-menu-link"}>
+						<a className="downloadMenu" href="/assets/img/Menu.pdf" download>
+							Скачать наше меню в формате pdf
+						</a>
+					</Box>
 				</section>
-				<a className="downloadMenu" href="/assets/img/Menu.pdf" download>
-					Скачать наше меню в формате pdf
-				</a>
 			</Box>
 			<BookingBlock />
 		</section>
