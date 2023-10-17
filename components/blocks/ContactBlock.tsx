@@ -84,36 +84,6 @@ const ContactBlock: FC = () => {
 					сб-вс 10:00 - 23:00
 				</Typography>
 
-				<Box sx={{ display: "flex", marginTop: "25px" }}>
-					<Box
-						sx={{
-							border: "1px solid #fff",
-							borderRadius: "100%",
-							width: "30px",
-							height: "30px",
-							marginRight: "15px",
-						}}
-					/>
-					<Box
-						sx={{
-							border: "1px solid #fff",
-							borderRadius: "100%",
-							width: "30px",
-							height: "30px",
-							marginRight: "15px",
-						}}
-					/>
-					<Box
-						sx={{
-							border: "1px solid #fff",
-							borderRadius: "100%",
-							width: "30px",
-							height: "30px",
-							marginRight: "15px",
-						}}
-					/>
-				</Box>
-
 				<ButtonComponent
 					className={"button-component contact-button"}
 					styles={{
