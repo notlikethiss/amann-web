@@ -1,9 +1,8 @@
 //main modules
-import { CSSProperties, FC, ReactNode } from "react";
 import { Button } from "@mui/material";
 
 //types
-import type { MouseEventHandler } from "react";
+import { CSSProperties, MouseEventHandler, FC, ReactNode } from "react";
 
 interface IButtonComponent {
 	children: string | ReactNode;

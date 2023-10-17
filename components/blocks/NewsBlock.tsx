@@ -4,13 +4,14 @@ import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 
 //types
-import type { FC } from "react";
+import type { FC, CSSProperties } from "react";
 
 interface IEventCard {
 	image: string;
 	name: string;
 	date: string;
 	className?: string;
+	style?: CSSProperties;
 }
 
 const EventCard = memo<IEventCard>(function EventCard({
@@ -18,9 +19,10 @@ const EventCard = memo<IEventCard>(function EventCard({
 	name,
 	date,
 	className,
+	style,
 }) {
 	return (
-		<Box sx={{ margin: "0 24px 0 0" }} className={"event-card"}>
+		<Box sx={style} className={"event-card"}>
 			<Image
 				alt="event"
 				src={image}

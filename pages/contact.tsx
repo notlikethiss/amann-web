@@ -27,6 +27,7 @@ const ContactPage: FC = () => {
 						height: "522px",
 						alignItems: "center",
 						justifyContent: "center",
+						gap: "50px",
 						width: "100%",
 					}}
 					className="photo-container"

@@ -319,14 +319,20 @@ a {
 
 .news-block {
 	background: #d9d4d0;
-	margin-right: 140px;
 	padding: 120px 64px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.news-container {
+	width: 1280px;
 }
 
 .booking-block {
 	display: flex;
 	justify-content: center;
-	gap: 225px;
+	gap: 300px;
 	background: #813a34;
 	padding: 34px 64px;
 }
@@ -416,13 +422,6 @@ a {
 	display: none;
 }
 
-.news-block {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-right: 40px;
-}
-
 .gallery-info {
 	margin-right: 430px;
 }
@@ -471,10 +470,6 @@ a {
 	display: flex !important;
 	justify-content: center;
 	align-items: center;
-}
-
-.booking-image {
-	margin-right: 75px;
 }
 
 .swiper-button-prev {
@@ -611,6 +606,10 @@ a {
 
 	.address {
 		height: 450px !important;
+	}
+
+	.news-container {
+		width: max-content;
 	}
 
 	.sm-text {
