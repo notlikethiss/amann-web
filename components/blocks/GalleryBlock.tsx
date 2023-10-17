@@ -24,7 +24,7 @@ const MarqueeComponent: FC<IMarqueeComponent> = ({ image }) => {
 				backgroundSize: "cover",
 				backgroundPositionX: "center",
 				width: "392px",
-				height: "390px",
+				height: "320px",
 				margin: "12px 12px",
 			}}
 			className="gallery-image"
