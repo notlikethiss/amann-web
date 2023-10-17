@@ -55,7 +55,7 @@ const MainPage: FC = () => {
 							textTransform: "uppercase",
 						}}
 					>
-						Москва, ул. Прозоровского 21
+						Саввинская набережная, 12с8
 					</Typography>
 					<Typography
 						className="sm-text"
@@ -94,7 +94,7 @@ const MainPage: FC = () => {
 							textTransform: "uppercase",
 						}}
 					>
-						Москва, ул. Прозоровского 21
+						Саввинская набережная, 12с8
 					</Typography>
 					<Typography
 						className=""

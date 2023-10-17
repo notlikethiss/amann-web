@@ -50,9 +50,9 @@ const MenuComponent: FC<IMenu> = ({ visibleMenu, handleMenu }) => {
 						letterSpacing: "1px",
 					}}
 				>
-					8 800 123 45 67
+					+7 (926) 697 77 79
 					<br />
-					support@amann.com
+					VMVNNRest@yandex.ru
 				</Typography>
 				<Box sx={{ display: "flex", margin: "20px 0 25px 0" }}>
 					<Box
@@ -105,7 +105,7 @@ const MenuComponent: FC<IMenu> = ({ visibleMenu, handleMenu }) => {
 						letterSpacing: "1px",
 					}}
 				>
-					Москва, ул. Прозоровского 21
+					Саввинская набережная, 12с8
 				</Typography>
 			</Box>
 			<ButtonComponent onClick={handleMenu}>Забронировать</ButtonComponent>

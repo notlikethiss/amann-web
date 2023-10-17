@@ -54,47 +54,49 @@ const EventCard = memo<IEventCard>(function EventCard({
 const NewsBlock: FC = () => {
 	return (
 		<section className="news-block">
-			<Typography
-				sx={{
-					color: "#000",
-					textTransform: "uppercase",
-					fontWeight: "800",
-					fontSize: "35px",
-				}}
-				className="news-heading"
-			>
-				Новостной блок
-			</Typography>
-			<Box
-				sx={{
-					display: "flex",
-					marginTop: "33px",
-					alignItems: "center",
-					justifyContent: "space-between",
-				}}
-				className={"event-row"}
-			>
-				<EventCard
-					name={"Название мероприятия"}
-					image={"/assets/img/Event-one.jpg"}
-					date={"01.01.2024"}
-				/>
-				<EventCard
-					name={"Название мероприятия"}
-					image={"/assets/img/Event-two.jpg"}
-					date={"01.01.2024"}
-				/>
-				<EventCard
-					name={"Название мероприятия"}
-					image={"/assets/img/Event-three.jpg"}
-					date={"01.01.2024"}
-				/>
-				<EventCard
-					name={"Название мероприятия"}
-					image={"/assets/img/Event-four.jpg"}
-					date={"01.01.2024"}
-				/>
-			</Box>
+			<div className="news-container">
+				<Typography
+					sx={{
+						color: "#000",
+						textTransform: "uppercase",
+						fontWeight: "800",
+						fontSize: "35px",
+					}}
+					className="news-heading"
+				>
+					Новостной блок
+				</Typography>
+				<Box
+					sx={{
+						display: "flex",
+						marginTop: "33px",
+						alignItems: "center",
+						justifyContent: "space-between",
+					}}
+					className={"event-row"}
+				>
+					<EventCard
+						name={"Название мероприятия"}
+						image={"/assets/img/Event-one.jpg"}
+						date={"01.01.2024"}
+					/>
+					<EventCard
+						name={"Название мероприятия"}
+						image={"/assets/img/Event-two.jpg"}
+						date={"01.01.2024"}
+					/>
+					<EventCard
+						name={"Название мероприятия"}
+						image={"/assets/img/Event-three.jpg"}
+						date={"01.01.2024"}
+					/>
+					<EventCard
+						name={"Название мероприятия"}
+						image={"/assets/img/Event-four.jpg"}
+						date={"01.01.2024"}
+					/>
+				</Box>
+			</div>
 		</section>
 	);
 };

@@ -315,12 +315,14 @@ a {
 
 .news-block {
 	background: #d9d4d0;
+	margin-right: 140px;
 	padding: 120px 64px;
 }
 
 .booking-block {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	gap: 225px;
 	background: #813a34;
 	padding: 34px 64px;
 }
@@ -330,13 +332,13 @@ a {
 	justify-content: center;
 	align-items: center;
 	margin-top: 70px;
+	margin-right: 170px;
 	padding-bottom: 110px;
 	background: #d9d4d0;
 }
 
 .info-collage {
 	display: flex;
-	margin-left: 64px;
 }
 
 .info-text {
@@ -346,7 +348,8 @@ a {
 .about-block {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	gap: 256px;
 	padding: 103px 64px 100px 64px;
 	background: #4a4b4d;
 }
@@ -358,8 +361,13 @@ a {
 .contact-block {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	align-items: center;
 	background: #4a4b4d;
+}
+
+.contact-container {
+	margin-right: 65px;
 }
 
 .mobile-additional-row {
@@ -408,6 +416,12 @@ a {
 	display: none;
 }
 
+.news-block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .desktop-container {
 	display: flex;
 	flex-direction: column;
@@ -440,6 +454,10 @@ a {
 	display: flex !important;
 	justify-content: center;
 	align-items: center;
+}
+
+.booking-image {
+	margin-right: 160px;
 }
 
 .swiper-button-prev {
@@ -605,6 +623,7 @@ a {
 	.information-block {
 		flex-direction: column !important;
 		margin-top: 0 !important;
+		margin-right: 0 !important;
 		padding: 35px 35px 70px 35px !important;
 	}
 
@@ -646,6 +665,7 @@ a {
 		display: flex !important;
 		flex-direction: column-reverse !important;
 		align-items: center !important;
+		gap: 0 !important;
 		justify-content: center !important;
 		padding: 35px 35px 70px 35px !important;
 	}
@@ -721,6 +741,7 @@ a {
 
 	//news
 	.news-block {
+		margin-right: 0 !important;
 		padding: 70px 35px !important;
 	}
 
@@ -752,10 +773,12 @@ a {
 
 	.booking-block {
 		flex-direction: column-reverse !important;
+		gap: 0 !important;
 		padding: 0 !important;
 	}
 
 	.booking-image {
+		margin-right: 0 !important;
 		width: 100% !important;
 		height: max-content !important;
 	}
@@ -826,6 +849,7 @@ a {
 	}
 
 	.contact-container {
+		margin-right: 0 !important;
 		padding: 50px 35px !important;
 	}
 

@@ -51,9 +51,9 @@ const ContactBlock: FC = () => {
 					}}
 					className="contact-description"
 				>
-					8 800 123 45 67
+					+7 (926) 697 77 79
 					<br />
-					support@amann.com
+					VMVNNRest@yandex.ru
 				</Typography>
 
 				<Typography
@@ -66,7 +66,7 @@ const ContactBlock: FC = () => {
 					}}
 					className="contact-description"
 				>
-					Москва, ул. Прозоровского 21
+					Саввинская набережная, 12с8
 				</Typography>
 
 				<Typography

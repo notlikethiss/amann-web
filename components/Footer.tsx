@@ -39,7 +39,7 @@ const Footer: FC<ILanguage> = ({ language, footerBg, handleLanguage }) => {
 						letterSpacing: "1px",
 					}}
 				>
-					© ООО “АМАНН”, 2023
+					© ООО “КОНТИНЕНТ”, 2023
 				</Typography>
 				<Typography
 					sx={{
@@ -49,7 +49,7 @@ const Footer: FC<ILanguage> = ({ language, footerBg, handleLanguage }) => {
 						marginBottom: "30px",
 					}}
 				>
-					ИНН 000000000000
+					ИНН 7734687630
 				</Typography>
 			</Box>
 			<div
@@ -74,7 +74,7 @@ const Footer: FC<ILanguage> = ({ language, footerBg, handleLanguage }) => {
 						}}
 						className="footer-text"
 					>
-						Москва, ул. Прозоровского 21
+						Саввинская набережная, 12с8
 					</Typography>
 					<Typography
 						sx={{
@@ -100,8 +100,8 @@ const Footer: FC<ILanguage> = ({ language, footerBg, handleLanguage }) => {
 					<Typography
 						sx={{ fontSize: "20px", fontWeight: "300", letterSpacing: "1px" }}
 					>
-						8 800 123 45 67
-						<br /> support@amann.com
+						+7 (926) 697 77 79
+						<br /> VMVNNRest@yandex.ru
 					</Typography>
 					<Link
 						style={{ marginTop: "15px" }}
