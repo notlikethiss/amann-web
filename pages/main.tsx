@@ -140,7 +140,7 @@ const MainPage: FC = () => {
 
 				<InfoBlock heading="АТМОСФЕРА" content="mainPage" />
 
-				<AboutBlock heading="НАШ РЕСТОРАН" content="mainPage" link />
+				<AboutBlock heading="ПРОСТРАНСТВО" content="mainPage" link />
 
 				<GalleryBlock />
 
