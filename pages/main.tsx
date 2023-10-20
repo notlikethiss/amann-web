@@ -61,7 +61,7 @@ const MainPage: FC = () => {
 						className="sm-text"
 						sx={{ fontSize: "20px", fontWeight: "300", letterSpacing: "3px" }}
 					>
-						пн-пт 9:00 - 22:00
+						чт 17:00 - 00:00
 					</Typography>
 					<Typography
 						className="mobile-text"
@@ -72,7 +72,7 @@ const MainPage: FC = () => {
 							letterSpacing: "3px",
 						}}
 					>
-						сб-вс 10:00 - 23:00
+						пт-сб 18:00 - 06:00
 					</Typography>
 				</div>
 				<div className="mobile-container">
@@ -100,7 +100,7 @@ const MainPage: FC = () => {
 						className=""
 						sx={{ fontSize: "20px", fontWeight: "300", letterSpacing: "3px" }}
 					>
-						пн-пт 9:00 - 22:00
+						чт 17:00 - 00:00
 					</Typography>
 					<Typography
 						className="mobile-text"
@@ -111,7 +111,7 @@ const MainPage: FC = () => {
 							letterSpacing: "3px",
 						}}
 					>
-						сб-вс 10:00 - 23:00
+						пт-сб 18:00 - 06:00
 					</Typography>
 				</div>
 				<ButtonComponent
@@ -138,9 +138,9 @@ const MainPage: FC = () => {
 					<MarqueeComponent />
 				</Marquee>
 
-				<InfoBlock />
+				<InfoBlock heading="АТМОСФЕРА" content="mainPage" />
 
-				<AboutBlock heading="НАШ РЕСТОРАН" link />
+				<AboutBlock heading="НАШ РЕСТОРАН" content="mainPage" link />
 
 				<GalleryBlock />
 

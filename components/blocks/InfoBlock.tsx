@@ -8,10 +8,19 @@ import { CSSProperties } from "@mui/material/styles/createMixins";
 import type { FC } from "react";
 
 interface IInfoBlock {
+	heading: string;
+	content: "mainPage" | "aboutPage";
 	style?: CSSProperties;
 }
 
-const InfoBlock: FC<IInfoBlock> = ({ style }) => {
+const infoContent = {
+	mainPage:
+		"Когда небо сходится с землей, а солнце скрывается за линией горизонта, на пустыню опускается ночь. Незабываемые ощущения и опыт, бесконечные дюны и звезды — теперь, чтобы прикоснуться к притягательной атмосфере восточной ночи, не нужно пересекать континент. ",
+	aboutPage:
+		"Название AMANN вдохновлено восточной культурой, в пер. с арабского означает «безопасность / спокойствие», а специальный шрифт с заостренными буквами отсылает к очертаниям песчаных холмов.",
+};
+
+const InfoBlock: FC<IInfoBlock> = ({ style, content, heading }) => {
 	return (
 		<section className={"information-block"} style={style}>
 			<div className="info-collage">
@@ -39,7 +48,7 @@ const InfoBlock: FC<IInfoBlock> = ({ style }) => {
 					color={"#000"}
 					textTransform={"uppercase"}
 				>
-					Почему Amann?
+					{heading}
 				</Typography>
 				<Typography
 					width={445}
@@ -51,9 +60,7 @@ const InfoBlock: FC<IInfoBlock> = ({ style }) => {
 					marginBottom={"30px"}
 					className="info-description"
 				>
-					Название AMANN вдохновлено восточной культурой, в пер. с арабского означает
-					«безопасность / спокойствие», а специальный шрифт с заостренными буквами
-					отсылает к очертаниям песчаных холмов.
+					{content === "mainPage" ? infoContent.mainPage : infoContent.aboutPage}
 				</Typography>
 				<Link
 					style={{

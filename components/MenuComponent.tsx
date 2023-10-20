@@ -92,9 +92,8 @@ const MenuComponent: FC<IMenu> = ({ visibleMenu, handleMenu }) => {
 						letterSpacing: "1px",
 					}}
 				>
-					пн-пт 9:00 - 22:00
-					<br />
-					сб-вс 10:00 - 23:00
+					чт 17:00 - 00:00
+					<br /> пт-сб 18:00 - 06:00
 				</Typography>
 				<Typography
 					sx={{

@@ -79,8 +79,12 @@ const AboutPage: FC = () => {
 					</Box>
 				</Box>
 			</Parallax>
-			<InfoBlock style={{ margin: "0", paddingTop: "154px" }} />
-			<AboutBlock heading="Наш ресторан" />
+			<InfoBlock
+				heading="Почему Amann?"
+				content="aboutPage"
+				style={{ margin: "0", paddingTop: "154px" }}
+			/>
+			<AboutBlock heading="Наш ресторан" content="aboutPage" />
 			<Box
 				sx={{
 					background: "#000",

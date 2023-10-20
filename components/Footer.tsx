@@ -60,6 +60,47 @@ const Footer: FC<ILanguage> = ({ language, footerBg, handleLanguage }) => {
 					sx={{
 						display: "flex",
 						flexDirection: "column",
+						marginRight: "116px",
+						alignItems: "flex-start",
+					}}
+					className={"footer-item number-email"}
+				>
+					<Typography
+						sx={{
+							fontSize: "20px",
+							fontWeight: "300",
+							letterSpacing: "1px",
+							lineHeight: "36.5px",
+						}}
+					>
+						+7 (926) 697 77 79
+						<br /> VMVNNRest@yandex.ru
+					</Typography>
+					<Link className="instagram-link" href={"https://instagram.com"}>
+						<Typography
+							sx={{
+								fontSize: "20px",
+								fontWeight: "300",
+							}}
+						>
+							Наш Instagram*
+						</Typography>
+					</Link>
+					<Link className="instagram-link" href={"https://vk.com/amannmoscow"}>
+						<Typography
+							sx={{
+								fontSize: "20px",
+								fontWeight: "300",
+							}}
+						>
+							Страница VK
+						</Typography>
+					</Link>
+				</Box>
+				<Box
+					sx={{
+						display: "flex",
+						flexDirection: "column",
 						marginRight: "144px",
 						alignItems: "baseline",
 						justifyContent: "center",
@@ -81,46 +122,20 @@ const Footer: FC<ILanguage> = ({ language, footerBg, handleLanguage }) => {
 							fontSize: "18px",
 							fontWeight: "300",
 							letterSpacing: "1px",
-							marginTop: "35px",
+							lineHeight: "30.3px",
 						}}
 					>
-						пн-пт 9:00 - 22:00
-						<br /> сб-вс 10:00 - 23:00
+						чт 17:00 - 00:00
+						<br /> пт-сб 18:00 - 06:00
 					</Typography>
-				</Box>
-				<Box
-					sx={{
-						display: "flex",
-						flexDirection: "column",
-						marginRight: "116px",
-						alignItems: "flex-start",
-					}}
-					className={"footer-item number-email"}
-				>
 					<Typography
-						sx={{ fontSize: "20px", fontWeight: "300", letterSpacing: "1px" }}
-					>
-						+7 (926) 697 77 79
-						<br /> VMVNNRest@yandex.ru
-					</Typography>
-					<Link
-						style={{ marginTop: "15px" }}
-						className="instagram-link"
-						href={"https://instagram.com"}
-					>
-						<Typography
-							sx={{
-								fontSize: "20px",
-								fontWeight: "300",
-								borderBottom: "1px solid #fff",
-								marginBottom: "20px",
-							}}
-						>
-							Наш Instagram
-						</Typography>
-					</Link>
-					<Typography
-						sx={{ fontSize: "14px", fontWeight: "300", lineHeight: "17.57px" }}
+						sx={{
+							fontSize: "14px",
+							fontWeight: "300",
+							lineHeight: "17.57px",
+							marginTop: "5px",
+							marginBottom: "5px",
+						}}
 					>
 						* запрещенная на территории <br /> Российской Федерации организация
 					</Typography>
