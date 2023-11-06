@@ -120,6 +120,7 @@ const AboutPage: FC = () => {
 							color: "#fff",
 							fontSize: "35px",
 							fontWeight: "800",
+							textTransform: "uppercase",
 						}}
 						className="chief-heading"
 					>

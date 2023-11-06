@@ -16,6 +16,7 @@ import BookingBlock from "../components/blocks/BookingBlock";
 import SubscribeBlock from "../components/blocks/SubscribeBlock";
 import ContactBlock from "../components/blocks/ContactBlock";
 import ButtonComponent from "../components/ButtonComponent";
+import Link from "next/link";
 
 const MarqueeComponent: FC = () => {
 	return (
@@ -38,13 +39,22 @@ const MainPage: FC = () => {
 			>
 				<div className="desktop-container">
 					<Image
-						style={{ marginBottom: "30px" }}
 						alt="logo"
 						src={"/assets/img/Logo.svg"}
 						className="main-logo"
 						width={230}
 						height={40}
 					/>
+					<Typography
+						sx={{
+							fontSize: "18px",
+							letterSpacing: "3px",
+							marginTop: "15px",
+							marginBottom: "20px",
+						}}
+					>
+						Ночной клуб
+					</Typography>
 					<Typography
 						className="sm-text"
 						sx={{
@@ -57,33 +67,63 @@ const MainPage: FC = () => {
 					>
 						Саввинская набережная, 12с8
 					</Typography>
-					<Typography
-						className="sm-text"
-						sx={{ fontSize: "20px", fontWeight: "300", letterSpacing: "3px" }}
-					>
-						чт 17:00 - 00:00
-					</Typography>
-					<Typography
-						className="mobile-text"
-						sx={{
-							fontSize: "20px",
-							fontWeight: "300",
-							marginBottom: "30px",
-							letterSpacing: "3px",
-						}}
-					>
-						пт-сб 18:00 - 06:00
-					</Typography>
+					<div className="date-block">
+						<Typography
+							className="sm-text"
+							sx={{ fontSize: "20px", fontWeight: "300", letterSpacing: "3px" }}
+						>
+							чт
+						</Typography>
+						<Typography
+							className="sm-text"
+							sx={{ fontSize: "20px", fontWeight: "300", letterSpacing: "3px" }}
+						>
+							17:00 - 00:00
+						</Typography>
+					</div>
+					<div className="date-block">
+						<Typography
+							className="mobile-text"
+							sx={{
+								fontSize: "20px",
+								fontWeight: "300",
+								marginBottom: "30px",
+								letterSpacing: "3px",
+							}}
+						>
+							пт-сб
+						</Typography>
+						<Typography
+							className="mobile-text"
+							sx={{
+								fontSize: "20px",
+								fontWeight: "300",
+								marginBottom: "30px",
+								letterSpacing: "3px",
+							}}
+						>
+							18:00 - 06:00
+						</Typography>
+					</div>
 				</div>
 				<div className="mobile-container">
 					<Image
-						style={{ marginBottom: "30px" }}
 						alt="logo"
 						src={"/assets/img/Logo.svg"}
 						className="main-logo"
 						width={230}
 						height={40}
 					/>
+					<Typography
+						sx={{
+							fontSize: "13px",
+							letterSpacing: "3px",
+							marginTop: "15px",
+							marginBottom: "20px",
+						}}
+					>
+						Ночной клуб
+					</Typography>
 					<Typography
 						className="sm-text"
 						sx={{
@@ -96,24 +136,68 @@ const MainPage: FC = () => {
 					>
 						Саввинская набережная, 12с8
 					</Typography>
+					<div className="date-block">
+						<Typography
+							className="sm-text"
+							sx={{
+								fontSize: "20px",
+								fontWeight: "300",
+								letterSpacing: "3px",
+							}}
+						>
+							чт
+						</Typography>
+						<Typography
+							className="sm-text"
+							sx={{
+								fontSize: "20px",
+								fontWeight: "300",
+								letterSpacing: "2px",
+								width: "138px",
+								whiteSpace: "nowrap",
+							}}
+						>
+							17:00 - 00:00
+						</Typography>
+					</div>
+					<div className="date-block">
+						<Typography
+							className="mobile-text"
+							sx={{
+								fontSize: "20px",
+								fontWeight: "300",
+								marginBottom: "30px",
+								letterSpacing: "3px",
+								width: "25px",
+								whiteSpace: "nowrap",
+							}}
+						>
+							пт-сб
+						</Typography>
+						<Typography
+							className="mobile-text"
+							sx={{
+								fontSize: "20px",
+								fontWeight: "300",
+								marginBottom: "30px",
+								letterSpacing: "2px",
+							}}
+						>
+							18:00 - 06:00
+						</Typography>
+					</div>
+				</div>
+				<Link href={"/menu"}>
 					<Typography
-						className=""
-						sx={{ fontSize: "20px", fontWeight: "300", letterSpacing: "3px" }}
-					>
-						чт 17:00 - 00:00
-					</Typography>
-					<Typography
-						className="mobile-text"
 						sx={{
-							fontSize: "20px",
-							fontWeight: "300",
-							marginBottom: "30px",
-							letterSpacing: "3px",
+							textDecoration: "underline",
+							fontSize: "18px",
+							marginBottom: "20px",
 						}}
 					>
-						пт-сб 18:00 - 06:00
+						Просмотреть меню
 					</Typography>
-				</div>
+				</Link>
 				<ButtonComponent
 					width={"288px"}
 					height={"50px"}
@@ -127,17 +211,6 @@ const MainPage: FC = () => {
 				</ButtonComponent>
 			</Parallax>
 			<div className="under-block">
-				<Marquee className={"main-marquee"}>
-					<MarqueeComponent />
-					<MarqueeComponent />
-					<MarqueeComponent />
-					<MarqueeComponent />
-					<MarqueeComponent />
-					<MarqueeComponent />
-					<MarqueeComponent />
-					<MarqueeComponent />
-				</Marquee>
-
 				<InfoBlock heading="АТМОСФЕРА" content="mainPage" />
 
 				<AboutBlock heading="ПРОСТРАНСТВО" content="mainPage" link />

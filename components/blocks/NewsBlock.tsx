@@ -61,7 +61,7 @@ const NewsBlock: FC = () => {
 					sx={{
 						color: "#000",
 						textTransform: "uppercase",
-						fontWeight: "800",
+						fontWeight: "700",
 						fontSize: "35px",
 					}}
 					className="news-heading"

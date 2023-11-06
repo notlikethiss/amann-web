@@ -58,7 +58,7 @@ const PhotoPage: NextPage = () => {
 								}}
 								className="photo-heading"
 							>
-								Наши фото
+								Фотографии ресторана
 							</Typography>
 							<Typography className="photo-description">
 								Для того, чтобы Вы смогли прочувствовать атмосферу нашего ресторана мы

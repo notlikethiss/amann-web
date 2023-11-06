@@ -341,7 +341,7 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 70px;
+	padding-top: 70px;
 	padding-bottom: 110px;
 	background: #d9d4d0;
 }
@@ -361,7 +361,7 @@ a {
 	justify-content: center;
 	gap: 120px;
 	padding: 103px 64px 100px 64px;
-	background: #4a4b4d;
+	background: #4d4c4a;
 }
 
 .MuiSelect-select {
@@ -378,6 +378,15 @@ a {
 
 .mobile-additional-row {
 	display: none;
+}
+
+.footer-date {
+	margin: 0 !important;
+	line-height: 25.2px !important;
+	letter-spacing: 2px !important;
+	text-align: center !important;
+	font-size: 18px !important;
+	font-weight: 300 !important;
 }
 
 //относится к кнопке в мобильном меню в хедере
@@ -524,6 +533,12 @@ a {
 	width: 100%;
 }
 
+.date-block {
+	display: flex;
+	justify-content: space-between;
+	width: 288px;
+}
+
 @media screen and (max-width: 1200px) {
 	.header {
 		z-index: 100;
@@ -548,6 +563,11 @@ a {
 
 	.desktop-menu {
 		display: none !important;
+	}
+
+	.date-block {
+		padding: 0 10px;
+		width: 100% !important;
 	}
 
 	.header {
@@ -622,7 +642,7 @@ a {
 
 	.sm-text {
 		line-height: 25.2px !important;
-		letter-spacing: 3px !important;
+		letter-spacing: 2px !important;
 		text-align: center !important;
 		font-size: 18px !important;
 		font-weight: 300 !important;
@@ -643,8 +663,7 @@ a {
 
 	.mobile-text {
 		line-height: 25.2px !important;
-		letter-spacing: 2px !important;
-		margin-bottom: 110px !important;
+		margin-bottom: 50px !important;
 		text-align: center !important;
 		font-size: 18px !important;
 		font-weight: 300 !important;
@@ -709,7 +728,7 @@ a {
 
 	.info-heading {
 		font-size: 30px !important;
-		font-weight: 800 !important;
+		font-weight: 700 !important;
 		width: 230px !important;
 		line-height: 33px !important;
 	}
@@ -810,7 +829,7 @@ a {
 	.news-heading {
 		width: 250px !important;
 		font-size: 30px !important;
-		font-weight: 800 !important;
+		font-weight: 700 !important;
 	}
 
 	.event-mobile-card {
@@ -858,7 +877,7 @@ a {
 
 	.booking-heading {
 		font-size: 30px !important;
-		font-weight: 800 !important;
+		font-weight: 700 !important;
 	}
 
 	.booking-description {
@@ -895,7 +914,7 @@ a {
 
 	.subscribe-heading {
 		font-size: 30px !important;
-		font-weight: 800 !important;
+		font-weight: 700 !important;
 		line-height: 33px !important;
 	}
 
@@ -1001,7 +1020,7 @@ a {
 
 	.photo-heading {
 		font-size: 30px !important;
-		font-weight: 800 !important;
+		font-weight: 700 !important;
 	}
 
 	.photo-description {
@@ -1054,7 +1073,7 @@ a {
 
 	.chief-heading {
 		font-size: 30px !important;
-		font-weight: 800 !important;
+		font-weight: 700 !important;
 	}
 
 	.chief-description {

@@ -25,7 +25,7 @@ const SubscribeBlock: FC = () => {
 				<Typography
 					sx={{
 						fontSize: "35px",
-						fontWeight: "800",
+						fontWeight: "700",
 						lineHeight: "38.5px",
 						letterSpacing: "1px",
 						color: "#fff",

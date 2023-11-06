@@ -17,8 +17,8 @@ import ButtonComponent from "../ButtonComponent";
 import Arrow from "../Arrow";
 
 const BookingBlock: FC = () => {
-	const [bookingDate, setBookingDate] = useState("25 march");
-	const [bookingTime, setBookingTime] = useState("12:30");
+	const [bookingDate, setBookingDate] = useState("5 december");
+	const [bookingTime, setBookingTime] = useState("17:00");
 	const [bookingPeople, setBookingPeople] = useState("2");
 
 	return (
@@ -35,7 +35,7 @@ const BookingBlock: FC = () => {
 				<Typography
 					sx={{
 						fontSize: "35px",
-						fontWeight: "800",
+						fontWeight: "700",
 						lineHeight: "38.5px",
 						letterSpacing: "1px",
 						color: "#fff",
@@ -60,15 +60,15 @@ const BookingBlock: FC = () => {
 						background: "rgba(255, 255, 255, 0.3)",
 						padding: "11px 20px 11px 23px",
 					}}
-					label={"25 march"}
+					label={"5 december"}
 					value={bookingDate}
 					IconComponent={Arrow}
 					className={"booking-select"}
 					onChange={(event: SelectChangeEvent) => setBookingDate(event.target.value)}
 				>
-					<MenuItem value={"25 march"}>25 марта, 2023</MenuItem>
-					<MenuItem value={"26 march"}>26 марта, 2023</MenuItem>
-					<MenuItem value={"27 march"}>27 марта, 2023</MenuItem>
+					<MenuItem value={"5 december"}>5 декабря, 2023</MenuItem>
+					<MenuItem value={"6 december"}>6 декабря, 2023</MenuItem>
+					<MenuItem value={"7 december"}>7 декабря, 2023</MenuItem>
 				</Select>
 
 				<Select
@@ -90,9 +90,9 @@ const BookingBlock: FC = () => {
 					className={"booking-select"}
 					onChange={(event: SelectChangeEvent) => setBookingTime(event.target.value)}
 				>
-					<MenuItem value={"12:30"}>12:30</MenuItem>
-					<MenuItem value={"14:30"}>14:30</MenuItem>
-					<MenuItem value={"16:30"}>16:30</MenuItem>
+					<MenuItem value={"17:00"}>17:00</MenuItem>
+					<MenuItem value={"18:30"}>18:30</MenuItem>
+					<MenuItem value={"20:30"}>20:30</MenuItem>
 				</Select>
 
 				<Select

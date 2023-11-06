@@ -117,24 +117,63 @@ const Footer: FC<ILanguage> = ({ language, footerBg, handleLanguage }) => {
 					>
 						Саввинская набережная, 12с8
 					</Typography>
-					<Typography
-						sx={{
-							fontSize: "18px",
-							fontWeight: "300",
-							letterSpacing: "1px",
-							lineHeight: "30.3px",
-						}}
-					>
-						чт 17:00 - 00:00
-						<br /> пт-сб 18:00 - 06:00
-					</Typography>
+					<div className="date-block">
+						<Typography
+							className="sm-text footer-date"
+							sx={{
+								fontSize: "20px",
+								fontWeight: "300",
+								letterSpacing: "2px",
+							}}
+						>
+							чт
+						</Typography>
+						<Typography
+							className="sm-text footer-date"
+							sx={{
+								fontSize: "20px",
+								fontWeight: "300",
+								letterSpacing: "2px",
+								width: "138px",
+								whiteSpace: "nowrap",
+							}}
+						>
+							17:00 - 00:00
+						</Typography>
+					</div>
+					<div className="date-block">
+						<Typography
+							className="footer-date"
+							sx={{
+								fontSize: "20px",
+								fontWeight: "300",
+								marginBottom: "30px",
+								letterSpacing: "3px",
+								width: "25px",
+								whiteSpace: "nowrap",
+							}}
+						>
+							пт-сб
+						</Typography>
+						<Typography
+							className="footer-date"
+							sx={{
+								fontSize: "20px",
+								fontWeight: "300",
+								marginBottom: "30px",
+								letterSpacing: "3px",
+							}}
+						>
+							18:00 - 06:00
+						</Typography>
+					</div>
 					<Typography
 						sx={{
 							fontSize: "14px",
 							fontWeight: "300",
 							lineHeight: "17.57px",
-							marginTop: "5px",
-							marginBottom: "5px",
+							marginTop: "10px",
+							marginBottom: "10px",
 						}}
 					>
 						* запрещенная на территории <br /> Российской Федерации организация

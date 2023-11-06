@@ -42,7 +42,7 @@ const GalleryBlock: FC = () => {
 		>
 			<Typography
 				sx={{
-					fontWeight: "800",
+					fontWeight: "700",
 					fontSize: "35px",
 					textTransform: "uppercase",
 					marginLeft: "64px",
@@ -75,14 +75,14 @@ const GalleryBlock: FC = () => {
 			</Marquee>
 			<div className="mobile-additional-row">
 				<Marquee speed={12} direction="left">
-					<MemoMarqueeComp image={"/assets/img/interier/Food-two.webp"} />
-					<MemoMarqueeComp image={"/assets/img/interier/Food-three.webp"} />
-					<MemoMarqueeComp image={"/assets/img/interier/Beverage-one.webp"} />
 					<MemoMarqueeComp image={"/assets/img/interier/Food-one.webp"} />
 					<MemoMarqueeComp image={"/assets/img/interier/Food-four.webp"} />
-					<MemoMarqueeComp image={"/assets/img/interier/Beverage-three.webp"} />
 					<MemoMarqueeComp image={"/assets/img/interier/Beverage-one.webp"} />
+					<MemoMarqueeComp image={"/assets/img/interier/Food-two.webp"} />
+					<MemoMarqueeComp image={"/assets/img/interier/Beverage-three.webp"} />
+					<MemoMarqueeComp image={"/assets/img/interier/Food-three.webp"} />
 					<MemoMarqueeComp image={"/assets/img/interier/Food-one.webp"} />
+					<MemoMarqueeComp image={"/assets/img/interier/Beverage-one.webp"} />
 				</Marquee>
 			</div>
 			<div className="gallery-info">
@@ -97,7 +97,7 @@ const GalleryBlock: FC = () => {
 				>
 					Наша кухня, пространство и меню постоянно развиваются по мере того, как мы
 					черпаем вдохновение для создания самых невероятных впечатлений для наших
-					гостей. Наша кухня, пространство и меню постоянно развиваются
+					гостей.
 				</Typography>
 
 				<div

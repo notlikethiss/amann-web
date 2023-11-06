@@ -31,7 +31,7 @@ const ContactBlock: FC = () => {
 				<Typography
 					sx={{
 						fontSize: "35px",
-						fontWeight: "800",
+						fontWeight: "700",
 						letterSpacing: "2px",
 						textTransform: "uppercase",
 						color: "#fff",

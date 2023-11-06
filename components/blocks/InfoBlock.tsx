@@ -43,7 +43,7 @@ const InfoBlock: FC<IInfoBlock> = ({ style, content, heading }) => {
 			<div className="info-text">
 				<Typography
 					className={"info-heading"}
-					fontWeight={800}
+					fontWeight={700}
 					fontSize={35}
 					color={"#000"}
 					textTransform={"uppercase"}
@@ -71,9 +71,9 @@ const InfoBlock: FC<IInfoBlock> = ({ style, content, heading }) => {
 						borderBottom: "1px solid #000",
 					}}
 					className="info-link"
-					href={"/menu"}
+					href={"/photos"}
 				>
-					Посмотреть меню
+					Посмотреть фото
 				</Link>
 			</div>
 		</section>
